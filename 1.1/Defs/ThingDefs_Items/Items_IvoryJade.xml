@@ -48,7 +48,7 @@
     </thingSetMakerTags>
     <costStuffCount>1</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="SculptureBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>ivory_figure</defName>
     <label>ivory figure</label>
     <description>A small figure carved from ivory.</description>
@@ -61,13 +61,17 @@
       <MaxHitPoints>35</MaxHitPoints>
       <Mass>0.4</Mass>
       <Flammability>0.9</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
       <Beauty>5</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>1</stackLimit>
     <costStuffCount>1</costStuffCount>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
   </ThingDef>
-  <ThingDef ParentName="SculptureBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>jade_urn</defName>
     <label>jade urn</label>
     <description>A small urn carved from jade.</description>
@@ -80,11 +84,15 @@
       <MaxHitPoints>20</MaxHitPoints>
       <Mass>0.3</Mass>
       <Flammability>0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
       <Beauty>5</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>1</stackLimit>
     <costStuffCount>1</costStuffCount>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="ApparelBase">
     <defName>jade_band</defName>
