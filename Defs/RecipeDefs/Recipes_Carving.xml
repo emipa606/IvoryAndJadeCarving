@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RecipeDef>
     <defName>engrave_tusk</defName>
@@ -9,9 +9,9 @@
     <workSpeedStat>SculptingSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-	<workSkill>Artistic</workSkill>
-	<recipeUsers>
-		<li>TableSculpting</li>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -32,7 +32,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-
   <RecipeDef>
     <defName>carve_ivory_figures</defName>
     <label>carve ivory figures</label>
@@ -42,9 +41,9 @@
     <workSpeedStat>SculptingSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-	<workSkill>Artistic</workSkill>
-	<recipeUsers>
-		<li>TableSculpting</li>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -65,7 +64,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  
   <RecipeDef>
     <defName>carve_jade_urn</defName>
     <label>carve jade urn</label>
@@ -75,9 +73,9 @@
     <workSpeedStat>SculptingSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-	<workSkill>Artistic</workSkill>
-	<recipeUsers>
-		<li>TableSculpting</li>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -98,7 +96,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  
   <RecipeDef>
     <defName>carve_jade_band</defName>
     <label>carve jade band</label>
@@ -108,9 +105,9 @@
     <workSpeedStat>SculptingSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-	<workSkill>Artistic</workSkill>
-	<recipeUsers>
-		<li>TableSculpting</li>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -131,5 +128,4 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  
 </Defs>

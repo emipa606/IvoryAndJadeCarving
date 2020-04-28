@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="ResourceBase">
     <defName>ivory_carved</defName>
     <label>engraved elephant tusk</label>
@@ -15,15 +14,15 @@
       <Mass>1.7</Mass>
       <Flammability>0.9</Flammability>
       <DeteriorationRate>0.5</DeteriorationRate>
-	  <Beauty>20</Beauty>
+      <Beauty>20</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>1</stackLimit>
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-	<comps>
-	  <li>
+    <comps>
+      <li>
         <compClass>CompQuality</compClass>
       </li>
       <li Class="CompProperties_Art">
@@ -31,15 +30,14 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
       </li>
     </comps>
-	<inspectorTabs>
+    <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
     <thingSetMakerTags>
       <li>AnimalPart</li>
     </thingSetMakerTags>
-	<costStuffCount>1</costStuffCount>
+    <costStuffCount>1</costStuffCount>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>ivory_figure</defName>
     <label>ivory figure</label>
@@ -54,19 +52,18 @@
       <Mass>0.4</Mass>
       <Flammability>0.9</Flammability>
       <DeteriorationRate>0.5</DeteriorationRate>
-	  <Beauty>5</Beauty>
+      <Beauty>5</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>75</stackLimit>
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-	<inspectorTabs>
+    <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
-	<costStuffCount>1</costStuffCount>
+    <costStuffCount>1</costStuffCount>
   </ThingDef>
-  
   <ThingDef ParentName="ResourceBase">
     <defName>jade_urn</defName>
     <label>jade urn</label>
@@ -81,19 +78,18 @@
       <Mass>0.3</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>0.5</DeteriorationRate>
-	  <Beauty>5</Beauty>
+      <Beauty>5</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>75</stackLimit>
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-	<inspectorTabs>
+    <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
-	<costStuffCount>1</costStuffCount>
+    <costStuffCount>1</costStuffCount>
   </ThingDef>
-
   <ThingDef ParentName="ApparelBase">
     <defName>jade_band</defName>
     <label>jade band</label>
@@ -108,18 +104,18 @@
       <Mass>0.2</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>0.5</DeteriorationRate>
-	  <Beauty>2</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
-	<equippedStatOffsets>
-	  <NegotiationAbility>0.15</NegotiationAbility>
-	  <TradePriceImprovement>0.05</TradePriceImprovement>
-	</equippedStatOffsets>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.15</NegotiationAbility>
+      <TradePriceImprovement>0.05</TradePriceImprovement>
+    </equippedStatOffsets>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>1</stackLimit>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-	<apparel>
+    <apparel>
       <careIfWornByCorpse>true</careIfWornByCorpse>
       <bodyPartGroups>
         <li>Arms</li>
@@ -128,8 +124,8 @@
         <li>Belt</li>
       </layers>
     </apparel>
-	<comps>
-	  <li>
+    <comps>
+      <li>
         <compClass>CompQuality</compClass>
       </li>
       <li Class="CompProperties_Art">
@@ -137,10 +133,9 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
       </li>
     </comps>
-	<inspectorTabs>
+    <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
-	<costStuffCount>1</costStuffCount>
+    <costStuffCount>1</costStuffCount>
   </ThingDef>
-  
 </Defs>

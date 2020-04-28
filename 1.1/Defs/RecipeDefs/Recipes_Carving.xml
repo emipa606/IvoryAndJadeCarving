@@ -9,7 +9,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
     <workSkill>Artistic</workSkill>
     <recipeUsers>
       <li>TableSculpting</li>
@@ -42,7 +42,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
     <workSkill>Artistic</workSkill>
     <recipeUsers>
       <li>TableSculpting</li>
@@ -75,7 +75,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
     <workSkill>Artistic</workSkill>
     <recipeUsers>
       <li>TableSculpting</li>
@@ -108,7 +108,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
     <soundWorking>Recipe_Sculpt</soundWorking>
-    <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
     <workSkill>Artistic</workSkill>
     <recipeUsers>
       <li>TableSculpting</li>

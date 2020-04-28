@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedCarvedSculpture</defName>
+    <label>unfinished carving</label>
+    <description>An unfinished carving.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>ivory_carved</defName>
     <label>engraved elephant tusk</label>
@@ -38,7 +48,7 @@
     </thingSetMakerTags>
     <costStuffCount>1</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="SculptureBase">
     <defName>ivory_figure</defName>
     <label>ivory figure</label>
     <description>A small figure carved from ivory.</description>
@@ -51,20 +61,13 @@
       <MaxHitPoints>35</MaxHitPoints>
       <Mass>0.4</Mass>
       <Flammability>0.9</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
       <Beauty>5</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>75</stackLimit>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
+    <stackLimit>1</stackLimit>
     <costStuffCount>1</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="SculptureBase">
     <defName>jade_urn</defName>
     <label>jade urn</label>
     <description>A small urn carved from jade.</description>
@@ -77,17 +80,10 @@
       <MaxHitPoints>20</MaxHitPoints>
       <Mass>0.3</Mass>
       <Flammability>0</Flammability>
-      <DeteriorationRate>0.5</DeteriorationRate>
       <Beauty>5</Beauty>
     </statBases>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>75</stackLimit>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
+    <stackLimit>1</stackLimit>
     <costStuffCount>1</costStuffCount>
   </ThingDef>
   <ThingDef ParentName="ApparelBase">
@@ -116,12 +112,12 @@
       <li>Apparel</li>
     </thingCategories>
     <apparel>
-      <careIfWornByCorpse>true</careIfWornByCorpse>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
-        <li>Arms</li>
+        <li>Hands</li>
       </bodyPartGroups>
       <layers>
-        <li>Belt</li>
+        <li>OnSkin</li>
       </layers>
     </apparel>
     <comps>

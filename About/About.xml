@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Ivory and Jade Carving (Continued)</name>
-  	<packageId>Mlie.IvoryAndJadeCarving</packageId>
-	<author>Sunlace</author>
-	<url>https://github.com/emipa606/IvoryAndJadeCarving</url>
-	<supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
-	</supportedVersions>
-	<modDependencies />
-	<loadAfter />
-	<description>Update of Sunlaces mod for RimWorld 1.1
+  <name>Ivory and Jade Carving (Continued)</name>
+  <packageId>Mlie.IvoryAndJadeCarving</packageId>
+  <author>Sunlace</author>
+  <url>https://github.com/emipa606/IvoryAndJadeCarving</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>Update of Sunlaces mod for RimWorld 1.1
 https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
 
 [img]https://i.imgur.com/GYswkZ7.png[/img]
