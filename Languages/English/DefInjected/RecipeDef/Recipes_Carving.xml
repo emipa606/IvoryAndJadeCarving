@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <engrave_tusk.label>engrave elephant tusk</engrave_tusk.label>
+  <engrave_tusk.description>Engrave elephant tusks with art.</engrave_tusk.description>
+  <engrave_tusk.jobString>engraving elephant tusk</engrave_tusk.jobString>
+
+  <carve_ivory_figures.label>carve ivory figures</carve_ivory_figures.label>
+  <carve_ivory_figures.description>Carve ivory into three small figures.</carve_ivory_figures.description>
+  <carve_ivory_figures.jobString>carving ivory figures</carve_ivory_figures.jobString>
+
+  <carve_jade_urn.label>carve jade urn</carve_jade_urn.label>
+  <carve_jade_urn.description>Carve an urn from jade.</carve_jade_urn.description>
+  <carve_jade_urn.jobString>carving jade urn</carve_jade_urn.jobString>
+
+  <carve_jade_band.label>carve jade band</carve_jade_band.label>
+  <carve_jade_band.description>Carve a band from jade. It can be worn to boost social skills slightly.</carve_jade_band.description>
+  <carve_jade_band.jobString>carving jade band</carve_jade_band.jobString>
+
+
+</LanguageData>

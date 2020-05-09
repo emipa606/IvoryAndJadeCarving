@@ -49,6 +49,44 @@
     <costStuffCount>1</costStuffCount>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
+    <defName>thrumbo_carved</defName>
+    <label>engraved thrumbo horn</label>
+    <description>An engraved thrumbo horn.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/thrombo_carved</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.8</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>25</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
     <defName>ivory_figure</defName>
     <label>ivory figure</label>
     <description>A small figure carved from ivory.</description>
