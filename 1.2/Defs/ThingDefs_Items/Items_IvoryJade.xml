@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedCarvedSculpture</defName>
+    <label>unfinished carving</label>
+    <description>An unfinished carving.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>ivory_carved</defName>
+    <label>engraved elephant tusk</label>
+    <description>An engraved elephant's tusk.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ivory_carved</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>120</MarketValue>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>1.7</Mass>
+      <Flammability>0.9</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>20</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>thrumbo_carved</defName>
+    <label>engraved thrumbo horn</label>
+    <description>An engraved thrumbo horn.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/thrombo_carved</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.8</Mass>
+      <Flammability>0.4</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>25</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>ivory_figure</defName>
+    <label>ivory figure</label>
+    <description>A small figure carved from ivory.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ivory_figure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <MaxHitPoints>35</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>0.9</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>5</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <costStuffCount>1</costStuffCount>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>jade_urn</defName>
+    <label>jade urn</label>
+    <description>A small urn carved from jade.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/jade_urn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>0.3</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>5</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <costStuffCount>1</costStuffCount>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ApparelBase">
+    <defName>jade_band</defName>
+    <label>jade band</label>
+    <description>A pretty band worn on the wrist. Increases social abilities slightly.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/jade_band</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.15</NegotiationAbility>
+      <TradePriceImprovement>0.05</TradePriceImprovement>
+    </equippedStatOffsets>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <costStuffCount>1</costStuffCount>
+  </ThingDef>
+</Defs>
