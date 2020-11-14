@@ -1,0 +1,25 @@
+-- Support for --
+- Animal Colab https://steamcommunity.com/sharedfiles/filedetails/?id=2208467668 (Walrus Tusk)
+- Erin's Mountain Animals https://steamcommunity.com/workshop/filedetails/?id=2250773505 (Argali Horn)
+- Ivory and Jade Carving (Thrumbo Horn, Elephant Tusk)
+- Legacy Ark https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241 (Longhorn Horn, Ankole Horn)
+- LotR - Dwarves https://steamcommunity.com/sharedfiles/filedetails/?id=2243330771 (Giant Boar Tusk)
+- LotR - Elves https://steamcommunity.com/sharedfiles/filedetails/?id=2244183992 (Lothlorien Deer Antler)
+- Megafauna https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938 (Deinotherium Tusk, Elasmotherium Horn, Mammoth Tusk, Megaloceros Antler, Platybelodon Tusk, Smilodon Fang, Zygolophodon Tusk)
+- Re-Growth - Exinct Animals https://steamcommunity.com/sharedfiles/filedetails/?id=2266685892 (Woolly Mammoth Tusk)
+- Tortoise Armor https://steamcommunity.com/sharedfiles/filedetails/?id=2209367890 (Tortoise Shell)
+- Unique Antelopes https://steamcommunity.com/sharedfiles/filedetails/?id=2280503138 (Addax Horn, Bongo Horn, Gembok Horn)
+- VAE - Tundra https://steamcommunity.com/sharedfiles/filedetails/?id=1895364585 (Moose Antler)
+- VFE- Vikings https://steamcommunity.com/sharedfiles/filedetails/?id=2231295285 (Lothurr Antler)
+- Westerado https://steamcommunity.com/sharedfiles/filedetails/?id=2236973780 (Bison Horn, Caribou Antler, Deer Antler, Elk Antler, Gazelle Horn, Ibex Horn, Moose Antler, Rhino Horn, Wild Boar Tusk)
+- Deer Extension https://steamcommunity.com/sharedfiles/filedetails/?id=1336473924 (Caribou Horn, Pilose Antler)
+
+-- Mods that need new droppables --
+- LotR - Dwarves = Giant Boar Tusk
+- LotR - Elves = Lothlorien Deer Antlers (uses the same art as Caribou from Westerado)
+- Erin's Mountain Animals = Argali Horn
+- VAE - Tundra = Moose Antler
+- VAE - Sea Ice https://steamcommunity.com/sharedfiles/filedetails/?id=1895364782 = Walrus Tusk (use the same as Walrus Tusk from the Animal Colab mod)
+
+-- Special --
+- Carved Lothurr Antler needs to glow blue light when placed as a Sculpture

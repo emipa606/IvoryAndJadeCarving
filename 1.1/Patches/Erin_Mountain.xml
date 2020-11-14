@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="HornArgali"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_HornArgali</defName>
+          <label>engraved argali horn</label>
+          <description>An engraved argali's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ArgaliHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>220</MarketValue>
+            <MaxHitPoints>40</MaxHitPoints>
+            <Mass>0.8</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>17</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_HornArgali</defName>
+          <label>engrave argali horn</label>
+          <description>Engrave argali horn with art.</description>
+          <jobString>engraving argali horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>HornArgali</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_HornArgali>1</engraved_HornArgali>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>HornArgali</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

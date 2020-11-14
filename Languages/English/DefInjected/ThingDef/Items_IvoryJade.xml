@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <ivory_carved.label>engraved elephant tusk</ivory_carved.label>
   <ivory_carved.description>An engraved elephant's tusk.</ivory_carved.description>
-
   <ivory_figure.label>ivory figure</ivory_figure.label>
   <ivory_figure.description>A small figure carved from ivory.</ivory_figure.description>
-
   <jade_urn.label>jade urn</jade_urn.label>
   <jade_urn.description>A small urn carved from jade.</jade_urn.description>
-
   <jade_band.label>jade band</jade_band.label>
   <jade_band.description>A pretty band worn on the wrist. Increases social abilities slightly.</jade_band.description>
-
-
 </LanguageData>
