@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <RecipeDef>
-    <defName>engrave_tusk</defName>
-    <label>engrave elephant tusk</label>
-    <description>Engrave elephant tusks with art.</description>
-    <jobString>engraving elephant tusk</jobString>
+  <RecipeDef Abstract="True" Name="IvoryEngraving">
     <workAmount>2500</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Sculpt</effectWorking>
@@ -12,8 +8,25 @@
     <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
     <workSkill>Artistic</workSkill>
     <recipeUsers>
+      <li>CraftingSpot</li>
       <li>TableSculpting</li>
     </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  <RecipeDef ParentName="IvoryEngraving">
+    <defName>engrave_tusk</defName>
+    <label>engrave elephant tusk</label>
+    <description>Engrave elephant tusks with art.</description>
+    <jobString>engraving elephant tusk</jobString>
     <ingredients>
       <li>
         <filter>
@@ -33,20 +46,11 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  <RecipeDef>
+  <RecipeDef ParentName="IvoryEngraving">
     <defName>engrave_thrumbo</defName>
     <label>engrave thrumbo horn</label>
     <description>Engrave thrumbo horns with art.</description>
     <jobString>engraving thrumbo horn</jobString>
-    <workAmount>25000</workAmount>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>Sculpt</effectWorking>
-    <soundWorking>Recipe_Sculpt</soundWorking>
-    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
-    <workSkill>Artistic</workSkill>
-    <recipeUsers>
-      <li>TableSculpting</li>
-    </recipeUsers>
     <ingredients>
       <li>
         <filter>

@@ -185,7 +185,7 @@
             </li>
           </ingredients>
           <products>
-            <engraved_MegalocerosAntlers>1</engraved_MegalocerosAntlers>
+            <engraved_MegalocerosAntlers>2</engraved_MegalocerosAntlers>
           </products>
           <fixedIngredientFilter>
             <thingDefs>
@@ -252,11 +252,11 @@
       <xpath>/Defs</xpath>
       <value>
         <ThingDef ParentName="IvoryEngraved">
-          <defName>engraved_SmilodonFangs</defName>
-          <label>engraved smilodon fangs</label>
-          <description>An engraved smilodon's fangs.</description>
+          <defName>engraved_SmilodonFang</defName>
+          <label>engraved smilodon fang</label>
+          <description>An engraved smilodon's fang.</description>
           <graphicData>
-            <texPath>Things/Item/Special/SmilodonFangsStatue</texPath>
+            <texPath>Things/Item/Special/SmilodonFangStatue</texPath>
             <graphicClass>Graphic_Single</graphicClass>
           </graphicData>
           <statBases>
@@ -283,7 +283,7 @@
             </li>
           </ingredients>
           <products>
-            <engraved_SmilodonFangs>1</engraved_SmilodonFangs>
+            <engraved_SmilodonFang>2</engraved_SmilodonFang>
           </products>
           <fixedIngredientFilter>
             <thingDefs>

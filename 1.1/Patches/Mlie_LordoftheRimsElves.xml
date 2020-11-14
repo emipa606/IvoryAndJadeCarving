@@ -11,7 +11,7 @@
           <label>lórien deer antler</label>
           <description>A antler from a lórien deer, can be sold for profit.</description>
           <graphicData>
-            <texPath>Things/Item/Special/CaribouAntler</texPath>
+            <texPath>Things/Item/Special/LothlorienAntler</texPath>
             <graphicClass>Graphic_Single</graphicClass>
           </graphicData>
           <statBases>
@@ -38,7 +38,7 @@
           <label>engraved lórien deer antler</label>
           <description>An engraved lórien deer's antler.</description>
           <graphicData>
-            <texPath>Things/Item/Special/CaribouAntlerStatue</texPath>
+            <texPath>Things/Item/Special/LothlorienAntlerStatue</texPath>
             <graphicClass>Graphic_Single</graphicClass>
           </graphicData>
           <statBases>
@@ -77,15 +77,15 @@
     </match>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/PawnKindDef[defName="LotRE_DeerMallornKind"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="LotRE_DeerMallornKind" or defName="LotRE_DeerMallornWhiteKind"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/PawnKindDef[defName="LotRE_DeerMallornKind"]/lifeStages/li[3]</xpath>
+      <xpath>/Defs/PawnKindDef[defName="LotRE_DeerMallornKind" or defName="LotRE_DeerMallornWhiteKind"]/lifeStages/li[3]</xpath>
       <value>
         <butcherBodyPart>
-          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <bodyPartGroup>HornAttackTool</bodyPartGroup>
           <thing>LotRE_DeerMallornKindHorn</thing>
-          <allowFemale>true</allowFemale>
+          <allowFemale>false</allowFemale>
         </butcherBodyPart>
       </value>
     </match>
