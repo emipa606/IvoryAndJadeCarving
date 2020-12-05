@@ -98,4 +98,200 @@
       </value>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BighornHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_BighornHorn</defName>
+          <label>engraved bighorn sheep horn</label>
+          <description>An engraved bighorn sheep's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/BighornHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>12</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_BighornHorn</defName>
+          <label>engrave bighorn sheep horn</label>
+          <description>Engrave bighorn sheep horn with art.</description>
+          <jobString>engraving bighorn sheep horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>BighornHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_BighornHorn>1</engraved_BighornHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>BighornHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="JacobsHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_JacobsHorn</defName>
+          <label>engraved jacobs sheep horn</label>
+          <description>An engraved jacobs sheep's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/JacobHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>12</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_JacobsHorn</defName>
+          <label>engrave jacobs sheep horn</label>
+          <description>Engrave jacobs sheep horn with art.</description>
+          <jobString>engraving jacobs sheep horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>JacobsHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_JacobsHorn>1</engraved_JacobsHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>JacobsHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MouflonHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_MouflonHorn</defName>
+          <label>engraved mouflon sheep horn</label>
+          <description>An engraved mouflon sheep's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MouflonHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>12</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_MouflonHorn</defName>
+          <label>engrave mouflon sheep horn</label>
+          <description>Engrave mouflon sheep horn with art.</description>
+          <jobString>engraving mouflon sheep horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>MouflonHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_MouflonHorn>1</engraved_MouflonHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>MouflonHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RackaHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_RackaHorn</defName>
+          <label>engraved racka sheep horn</label>
+          <description>An engraved racka sheep's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/RackaHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>12</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_RackaHorn</defName>
+          <label>engrave racka sheep horn</label>
+          <description>Engrave racka sheep horn with art.</description>
+          <jobString>engraving racka sheep horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>RackaHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_RackaHorn>1</engraved_RackaHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>RackaHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
 </Patch>
