@@ -17,6 +17,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
 
 - Added unfinished-thing and increased the sculpting time slightly.
 - Added thrumbo-horn
+- Added wood-cost for the stands
 
 Adds carvings for horn/antler/tusk-animals in the following mods:
 [list]
@@ -48,8 +49,6 @@ Adds carvings for horn/antler/tusk-animals in the following mods:
 	
 [img]https://i.imgur.com/NOW7jU1.png[/img]
 
-[h1]The mod has been updated to 1.1 by Mlie [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2052271495]here[/url][/h1]
-
 !!This is a repost and not my own work. All credit goes to the original author as noted below.!!
 
 So I really liked this mod from B19 but the author hasn't been seen for a while, so I updated it and am releasing it for all to enjoy. If there was any license for the old version then it still applies to this.
@@ -66,5 +65,18 @@ Finally you can make a jade band (a bracelet), this also uses a single piece of 
 Disclaimer:
 If the original author wants me to delete this I will respectfully do so.
 Original Author: Sunlace
-Updated for 1.0 By: Sixdd</description>
+Updated for 1.0 By: Sixdd
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

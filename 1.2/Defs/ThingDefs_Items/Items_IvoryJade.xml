@@ -12,7 +12,7 @@
   </ThingDef>
   <ThingDef Abstract="True" Name="IvoryEngraved" ParentName="BuildingBase">
     <thingClass>Building_Art</thingClass>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>Item</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <useHitPoints>true</useHitPoints>
@@ -20,6 +20,12 @@
     <thingCategories>
       <li>BuildingsArt</li>
     </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canPlaceOverWall>false</canPlaceOverWall>
+    </building>
     <statBases>
       <Flammability>1.0</Flammability>
       <SellPriceFactor>1.10</SellPriceFactor>
@@ -103,6 +109,7 @@
     </tradeTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>1</stackLimit>
+    <clearBuildingArea>false</clearBuildingArea>
     <thingSetMakerTags>
       <li>AnimalPart</li>
       <li>RewardStandardLowFreq</li>
