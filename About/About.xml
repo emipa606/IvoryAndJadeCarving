@@ -15,9 +15,10 @@
 Update of Sunlaces mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
 
-- Added unfinished-thing and increased the sculpting time slightly.
+- Added unfinished-thing and increased the sculpting time slightly
 - Added thrumbo-horn
 - Added wood-cost for the stands
+- Carvings can now be placed on tables/shelves
 
 Adds carvings for horn/antler/tusk-animals in the following mods:
 [list]
@@ -34,6 +35,7 @@ Adds carvings for horn/antler/tusk-animals in the following mods:
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2231295285]Vanilla Factions Expanded - Vikings[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2236973780]Westerado (Continued)[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1336473924]Deer Extension[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2339084391]Anima Animals[/url]
 [/list]
 
 - All carving-graphics made by Hydromancerx
@@ -77,6 +79,6 @@ Updated for 1.0 By: Sixdd
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
+
 </description>
 </ModMetaData>
-
