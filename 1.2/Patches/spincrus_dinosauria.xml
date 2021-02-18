@@ -8,8 +8,8 @@
       <value>
         <ThingDef ParentName="IvoryEngraved">
           <defName>stand_TyrannosaurusRexSkull</defName>
-          <label>engraved deinotherium tusk</label>
-          <description>An engraved deinotherium's tusk.</description>
+          <label>tyrannosaurus rex skull</label>
+          <description>A tyrannosaurus rex's skull.</description>
           <graphicData>
             <texPath>Things/Item/Special/TyrannosaurusRexSkullStatue</texPath>
             <graphicClass>Graphic_Single</graphicClass>
