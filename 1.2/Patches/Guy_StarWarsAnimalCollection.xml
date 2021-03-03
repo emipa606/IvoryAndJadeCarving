@@ -64,8 +64,8 @@
             <graphicClass>Graphic_Single</graphicClass>
           </graphicData>
           <statBases>
-            <MarketValue>250</MarketValue>
-            <MaxHitPoints>90</MaxHitPoints>
+            <MarketValue>1400</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
             <Mass>3.5</Mass>
             <Flammability>0.4</Flammability>
             <Beauty>19</Beauty>
