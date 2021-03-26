@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="LotRE_DeerMallornKindHorn"]</xpath>
+    <xpath>/Defs/ThingDef[defName="CaribouHorn"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationConditional">
       <xpath>/Defs/ThingDef[defName="AYTallow"]</xpath>
@@ -10,18 +10,18 @@
         <xpath>/Defs</xpath>
         <value>
           <ThingDef ParentName="ChandelierBase">
-            <defName>LorienAntlerChandelier</defName>
-            <label>lórien antler chandelier</label>
-            <description>A large chandelier made from the antlers of lórien.</description>
+            <defName>CaribouHornChandelier</defName>
+            <label>caribou horn chandelier</label>
+            <description>A large chandelier made from the horns of caribou.</description>
             <graphicData>
-              <texPath>Things/Item/Special/CaribouAntlerChandelier</texPath>
+              <texPath>Things/Item/Special/CaribouHornChandelier</texPath>
             </graphicData>
             <statBases>
-              <MarketValue>1200</MarketValue>
-              <MaxHitPoints>200</MaxHitPoints>
+              <MarketValue>6000</MarketValue>
+              <MaxHitPoints>300</MaxHitPoints>
               <Mass>8</Mass>
-              <Flammability>0.15</Flammability>
-              <Beauty>40</Beauty>
+              <Flammability>1</Flammability>
+              <Beauty>49</Beauty>
             </statBases>
             <comps>
               <li Class="CompProperties_Refuelable">
@@ -34,31 +34,31 @@
                   </thingDefs>
                 </fuelFilter>
                 <destroyOnNoFuel>false</destroyOnNoFuel>
-                <initialFuelPercent>1</initialFuelPercent>
+                <initialFuelPercent>100</initialFuelPercent>
               </li>
               <li Class="CustomLights.CompProperties_CustomLights">
                 <lightSize>0.05</lightSize>
                 <lightOffsets>
-                  <li>(0.77,0.1,-0.2)</li>
-                  <li>(-0.81,0.1,-0.2)</li>
-                  <li>(0.48,0.1,-0.17)</li>
-                  <li>(-0.43,0.1,-0.17)</li>
-                  <li>(0.31,0.1,0.32)</li>
-                  <li>(-0.28,0.1,0.30)</li>
+                  <li>(0.74,0.1,0.01)</li>
+                  <li>(-0.74,0.1,0.01)</li>
+                  <li>(0.45,0.1,0.035)</li>
+                  <li>(-0.46,0.1,0.035)</li>
+                  <li>(0.31,0.1,0.43)</li>
+                  <li>(-0.30,0.1,0.43)</li>
                 </lightOffsets>
               </li>
             </comps>
           </ThingDef>
           <RecipeDef ParentName="ChandelierMaking">
-            <defName>make_LorienAntlerChandelier</defName>
-            <label>make lórien antler chandelier</label>
-            <description>Make a lórien antler chandelier.</description>
-            <jobString>making lórien antler chandelier</jobString>
+            <defName>make_CaribouHornChandelier</defName>
+            <label>make caribou horn chandelier</label>
+            <description>Make a caribou horn chandelier.</description>
+            <jobString>making caribou horn chandelier</jobString>
             <ingredients>
               <li>
                 <filter>
                   <thingDefs>
-                    <li>LotRE_DeerMallornKindHorn</li>
+                    <li>CaribouHorn</li>
                   </thingDefs>
                 </filter>
                 <count>8</count>
@@ -81,11 +81,11 @@
               </li>
             </ingredients>
             <products>
-              <LorienAntlerChandelier>1</LorienAntlerChandelier>
+              <CaribouHornChandelier>1</CaribouHornChandelier>
             </products>
             <fixedIngredientFilter>
               <thingDefs>
-                <li>LotRE_DeerMallornKindHorn</li>
+                <li>CaribouHorn</li>
                 <li>AYTallow</li>
                 <li>Cloth</li>
               </thingDefs>

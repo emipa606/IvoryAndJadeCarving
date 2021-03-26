@@ -52,16 +52,13 @@
             </thingDefs>
           </fixedIngredientFilter>
         </RecipeDef>
-        <ThingDef ParentName="IvoryEngraved">
+        <ThingDef ParentName="ChandelierBase">
           <defName>VFEV_LothurrAntlerChandelier</defName>
           <label>lothurr antler chandelier</label>
           <description>A large chandelier made from the antlers of lothurr.</description>
           <graphicData>
             <texPath>Things/Item/Special/LothurrAntlerChandelier</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(3,3)</drawSize>
           </graphicData>
-          <size>(2,2)</size>
           <statBases>
             <MarketValue>15000</MarketValue>
             <MaxHitPoints>500</MaxHitPoints>
@@ -69,23 +66,27 @@
             <Flammability>0.15</Flammability>
             <Beauty>80</Beauty>
           </statBases>
-          <comps>
+          <comps Inherit="False">
+            <li>
+              <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+              <nameMaker>NamerArtSculpture</nameMaker>
+              <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+              <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+            </li>
             <li Class="CompProperties_Glower">
               <glowRadius>10</glowRadius>
               <glowColor>(160, 250, 255, 150)</glowColor>
             </li>
           </comps>
-          <placeWorkers>
-            <li>CustomLights.PlaceWorker_IsUnderRoof</li>
-          </placeWorkers>
         </ThingDef>
-        <RecipeDef ParentName="IvoryEngraving">
+        <RecipeDef ParentName="ChandelierMaking">
           <defName>make_VFEV_LothurrAntlerChandelier</defName>
           <label>make engraved lothurr antler chandelier</label>
           <description>Make a engraved lothurr antler chandelier.</description>
           <jobString>making engraved lothurr antler chandelier</jobString>
-          <workAmount>10000</workAmount>
-          <ingredients Inherit="False">
+          <ingredients>
             <li>
               <filter>
                 <thingDefs>

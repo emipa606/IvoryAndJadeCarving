@@ -10,6 +10,69 @@
     </graphicData>
     <stuffCategories Inherit="false" />
   </ThingDef>
+  <ThingDef Abstract="True" Name="ChandelierBase" ParentName="BuildingBase">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Item</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <tickerType>Normal</tickerType>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canPlaceOverWall>false</canPlaceOverWall>
+    </building>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>0.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>CustomLights.PlaceWorker_IsUnderRoof</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <clearBuildingArea>false</clearBuildingArea>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
   <ThingDef Abstract="True" Name="IvoryEngraved" ParentName="BuildingBase">
     <thingClass>Building_Art</thingClass>
     <altitudeLayer>Item</altitudeLayer>

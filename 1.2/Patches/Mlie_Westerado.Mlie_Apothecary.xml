@@ -9,17 +9,13 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs</xpath>
         <value>
-          <ThingDef ParentName="IvoryEngraved">
+          <ThingDef ParentName="ChandelierBase">
             <defName>DeerAntlerChandelier</defName>
             <label>deer antler chandelier</label>
             <description>A large chandelier made from the antlers of deer.</description>
             <graphicData>
               <texPath>Things/Item/Special/AntlerChandelier</texPath>
-              <graphicClass>Graphic_Single</graphicClass>
-              <drawSize>(3,3)</drawSize>
             </graphicData>
-            <size>(2,2)</size>
-            <tickerType>Normal</tickerType>
             <statBases>
               <MarketValue>1200</MarketValue>
               <MaxHitPoints>200</MaxHitPoints>
@@ -40,15 +36,6 @@
                 <destroyOnNoFuel>false</destroyOnNoFuel>
                 <initialFuelPercent>100</initialFuelPercent>
               </li>
-              <li Class="CompProperties_Flickable" />
-              <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(252,187,113,0)</glowColor>
-              </li>
-              <li Class="CompProperties_HeatPusher">
-                <heatPerSecond>0.5</heatPerSecond>
-                <heatPushMaxTemperature>23</heatPushMaxTemperature>
-              </li>
               <li Class="CustomLights.CompProperties_CustomLights">
                 <lightSize>0.05</lightSize>
                 <lightOffsets>
@@ -61,16 +48,13 @@
                 </lightOffsets>
               </li>
             </comps>
-            <placeWorkers>
-              <li>CustomLights.PlaceWorker_IsUnderRoof</li>
-            </placeWorkers>
           </ThingDef>
-          <RecipeDef ParentName="IvoryEngraving">
+          <RecipeDef ParentName="ChandelierMaking">
             <defName>make_DeerAntlerChandelier</defName>
             <label>make deer antler chandelier</label>
             <description>Make a deer antler chandelier.</description>
             <jobString>making deer antler chandelier</jobString>
-            <ingredients Inherit="False">
+            <ingredients>
               <li>
                 <filter>
                   <thingDefs>
@@ -120,17 +104,13 @@
       <match Class="PatchOperationAdd">
         <xpath>/Defs</xpath>
         <value>
-          <ThingDef ParentName="IvoryEngraved">
+          <ThingDef ParentName="ChandelierBase">
             <defName>CaribouAntlerChandelier</defName>
             <label>Caribou antler chandelier</label>
             <description>A large chandelier made from the antlers of Caribou.</description>
             <graphicData>
               <texPath>Things/Item/Special/CaribouAntlerChandelier</texPath>
-              <graphicClass>Graphic_Single</graphicClass>
-              <drawSize>(3,3)</drawSize>
             </graphicData>
-            <size>(2,2)</size>
-            <tickerType>Normal</tickerType>
             <statBases>
               <MarketValue>1200</MarketValue>
               <MaxHitPoints>200</MaxHitPoints>
@@ -151,15 +131,6 @@
                 <destroyOnNoFuel>false</destroyOnNoFuel>
                 <initialFuelPercent>1</initialFuelPercent>
               </li>
-              <li Class="CompProperties_Flickable" />
-              <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(252,187,113,0)</glowColor>
-              </li>
-              <li Class="CompProperties_HeatPusher">
-                <heatPerSecond>0.5</heatPerSecond>
-                <heatPushMaxTemperature>23</heatPushMaxTemperature>
-              </li>
               <li Class="CustomLights.CompProperties_CustomLights">
                 <lightSize>0.05</lightSize>
                 <lightOffsets>
@@ -172,16 +143,13 @@
                 </lightOffsets>
               </li>
             </comps>
-            <placeWorkers>
-              <li>CustomLights.PlaceWorker_IsUnderRoof</li>
-            </placeWorkers>
           </ThingDef>
-          <RecipeDef ParentName="IvoryEngraving">
+          <RecipeDef ParentName="ChandelierMaking">
             <defName>make_CaribouAntlerChandelier</defName>
             <label>make caribou antler chandelier</label>
             <description>Make a caribou antler chandelier.</description>
             <jobString>making caribou antler chandelier</jobString>
-            <ingredients Inherit="False">
+            <ingredients>
               <li>
                 <filter>
                   <thingDefs>
@@ -213,6 +181,196 @@
             <fixedIngredientFilter>
               <thingDefs>
                 <li>CaribouAntler_Westerado</li>
+                <li>AYTallow</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MooseAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>MooseAntlerChandelier</defName>
+            <label>moose antler chandelier</label>
+            <description>A large chandelier made from the antlers of moose.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/MooseAntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>150</MarketValue>
+              <MaxHitPoints>400</MaxHitPoints>
+              <Mass>8</Mass>
+              <Flammability>0.9</Flammability>
+              <Beauty>25</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li>AYTallow</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.71,0.1,-0.3)</li>
+                  <li>(-0.69,0.1,-0.3)</li>
+                  <li>(0.47,0.1,-0.04)</li>
+                  <li>(-0.47,0.1,-0.04)</li>
+                  <li>(0.23,0.1,0.20)</li>
+                  <li>(-0.2,0.1,0.20)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_MooseAntlerChandelier</defName>
+            <label>make moose antler chandelier</label>
+            <description>Make a moose antler chandelier.</description>
+            <jobString>making moose antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>MooseAntler_Westerado</li>
+                  </thingDefs>
+                </filter>
+                <count>8</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>AYTallow</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <MooseAntlerChandelier>1</MooseAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>MooseAntler_Westerado</li>
+                <li>AYTallow</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ElkAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>ElkAntlerChandelier</defName>
+            <label>elk antler chandelier</label>
+            <description>A large chandelier made from the antlers of elk.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/ElkAntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>60</MarketValue>
+              <MaxHitPoints>320</MaxHitPoints>
+              <Mass>6</Mass>
+              <Flammability>0.9</Flammability>
+              <Beauty>18</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li>AYTallow</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.62,0.1,-0.27)</li>
+                  <li>(-0.6,0.1,-0.27)</li>
+                  <li>(0.40,0.1,0)</li>
+                  <li>(-0.38,0.1,0)</li>
+                  <li>(0.20,0.1,0.42)</li>
+                  <li>(-0.18,0.1,0.42)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_ElkAntlerChandelier</defName>
+            <label>make elk antler chandelier</label>
+            <description>Make an elk antler chandelier.</description>
+            <jobString>making elk antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>ElkAntler_Westerado</li>
+                  </thingDefs>
+                </filter>
+                <count>6</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>AYTallow</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <ElkAntlerChandelier>1</ElkAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>ElkAntler_Westerado</li>
                 <li>AYTallow</li>
                 <li>Cloth</li>
               </thingDefs>

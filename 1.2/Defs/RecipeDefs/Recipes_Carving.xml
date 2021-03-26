@@ -22,6 +22,18 @@
       </li>
     </ingredients>
   </RecipeDef>
+  <RecipeDef Abstract="True" Name="ChandelierMaking">
+    <workAmount>4500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableSculpting</li>
+    </recipeUsers>
+  </RecipeDef>
   <RecipeDef ParentName="IvoryEngraving">
     <defName>engrave_tusk</defName>
     <label>engrave elephant tusk</label>
