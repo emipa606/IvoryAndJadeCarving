@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CaribouHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>CaribouHornChandelier</defName>
+            <label>caribou horn chandelier</label>
+            <description>A large chandelier made from the horns of caribou.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/CaribouHornChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>6000</MarketValue>
+              <MaxHitPoints>300</MaxHitPoints>
+              <Mass>8</Mass>
+              <Flammability>1</Flammability>
+              <Beauty>49</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li>AYTallow</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.74,0.1,0.01)</li>
+                  <li>(-0.74,0.1,0.01)</li>
+                  <li>(0.45,0.1,0.035)</li>
+                  <li>(-0.46,0.1,0.035)</li>
+                  <li>(0.31,0.1,0.43)</li>
+                  <li>(-0.30,0.1,0.43)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_CaribouHornChandelier</defName>
+            <label>make caribou horn chandelier</label>
+            <description>Make a caribou horn chandelier.</description>
+            <jobString>making caribou horn chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>CaribouHorn</li>
+                  </thingDefs>
+                </filter>
+                <count>8</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>AYTallow</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <CaribouHornChandelier>1</CaribouHornChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>CaribouHorn</li>
+                <li>AYTallow</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+</Patch>
