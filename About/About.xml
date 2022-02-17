@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Ivory and Jade Carving (Continued)</name>
   <packageId>Mlie.IvoryAndJadeCarving</packageId>
@@ -12,7 +12,7 @@
   </supportedVersions>
   <modDependencies />
   <loadAfter />
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Sunlaces mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
 
@@ -25,7 +25,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
 Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers in the following mods:
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2208467668]Animal Collab Project Vanilla-Style[/url]
-[*][url=https://steamcommunity.com/workshop/filedetails/?id=2250773505]Erin&apos;s Mountain Animals[/url]
+[*][url=https://steamcommunity.com/workshop/filedetails/?id=2250773505]Erin's Mountain Animals[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241]Legacy Ark[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2243330771]Lord of the Rims - Dwarves[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2244183992]Lord of the Rims - Elves[/url]
@@ -46,11 +46,12 @@ Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers 
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1865990377]Royal Thrumbos[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1612308782]Red Dragon[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123]Apothecary[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2371079000]【SZ】含商咀徵——神州文化扩展 Chinese Traditional Cultural Things Expanded[/url]
 [/list]
 
 - All carving-graphics made by Hydromancerx
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
@@ -59,16 +60,16 @@ Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers 
 	[/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 !!This is a repost and not my own work. All credit goes to the original author as noted below.!!
 
-So I really liked this mod from B19 but the author hasn&apos;t been seen for a while, so I updated it and am releasing it for all to enjoy. If there was any license for the old version then it still applies to this.
+So I really liked this mod from B19 but the author hasn't been seen for a while, so I updated it and am releasing it for all to enjoy. If there was any license for the old version then it still applies to this.
 
 [Original Description]
 You can engrave elephant tusks with artwork, increasing their value and giving them an art description. You could put them in a colonists room for a moderate beauty buff, but selling them is probably your best bet!
 
-You could instead carve an elephant tusk into three ivory figures, these don&apos;t have quality levels and can stack up to 75. The three are more valuable than a Normal Quality engraved tusk, but are less valuable than a Good Quality engraved tusk. So it really depends on if you have a skilled artist and how much storage space you have. The ivory figures are sorta like silver, their only purpose is for bartering.
+You could instead carve an elephant tusk into three ivory figures, these don't have quality levels and can stack up to 75. The three are more valuable than a Normal Quality engraved tusk, but are less valuable than a Good Quality engraved tusk. So it really depends on if you have a skilled artist and how much storage space you have. The ivory figures are sorta like silver, their only purpose is for bartering.
 
 You also have two items to choose from with jade carving. Jade urns are the equivalent of ivory figures and one urn requires one jade. Urns are twice as valuable as jade itself, but you do have to carve the jade so a little work must be done.
 
@@ -80,7 +81,7 @@ Original Author: Sunlace
 Updated for 1.0 By: Sixdd
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -89,6 +90,5 @@ Updated for 1.0 By: Sixdd
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>

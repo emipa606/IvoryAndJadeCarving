@@ -1,6 +1,6 @@
 # IvoryAndJadeCarving
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Sunlaces mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
@@ -15,7 +15,7 @@ Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers 
 
 
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2208467668]Animal Collab Project Vanilla-Style
-- https://steamcommunity.com/workshop/filedetails/?id=2250773505]Erin&apos;s Mountain Animals
+- https://steamcommunity.com/workshop/filedetails/?id=2250773505]Erin's Mountain Animals
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241]Legacy Ark
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2243330771]Lord of the Rims - Dwarves
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2244183992]Lord of the Rims - Elves
@@ -36,34 +36,26 @@ Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers 
 - https://steamcommunity.com/sharedfiles/filedetails/?id=1865990377]Royal Thrumbos
 - https://steamcommunity.com/sharedfiles/filedetails/?id=1612308782]Red Dragon
 - https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123]Apothecary
+- https://steamcommunity.com/sharedfiles/filedetails/?id=2371079000]【SZ】含商咀徵——神州文化扩展 Chinese Traditional Cultural Things Expanded
 
 
 
 - All carving-graphics made by Hydromancerx
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/IvoryAndJadeCarving]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 !!This is a repost and not my own work. All credit goes to the original author as noted below.!!
 
-So I really liked this mod from B19 but the author hasn&apos;t been seen for a while, so I updated it and am releasing it for all to enjoy. If there was any license for the old version then it still applies to this.
+So I really liked this mod from B19 but the author hasn't been seen for a while, so I updated it and am releasing it for all to enjoy. If there was any license for the old version then it still applies to this.
 
 [Original Description]
 You can engrave elephant tusks with artwork, increasing their value and giving them an art description. You could put them in a colonists room for a moderate beauty buff, but selling them is probably your best bet!
 
-You could instead carve an elephant tusk into three ivory figures, these don&apos;t have quality levels and can stack up to 75. The three are more valuable than a Normal Quality engraved tusk, but are less valuable than a Good Quality engraved tusk. So it really depends on if you have a skilled artist and how much storage space you have. The ivory figures are sorta like silver, their only purpose is for bartering.
+You could instead carve an elephant tusk into three ivory figures, these don't have quality levels and can stack up to 75. The three are more valuable than a Normal Quality engraved tusk, but are less valuable than a Good Quality engraved tusk. So it really depends on if you have a skilled artist and how much storage space you have. The ivory figures are sorta like silver, their only purpose is for bartering.
 
 You also have two items to choose from with jade carving. Jade urns are the equivalent of ivory figures and one urn requires one jade. Urns are twice as valuable as jade itself, but you do have to carve the jade so a little work must be done.
 
@@ -75,7 +67,7 @@ Original Author: Sunlace
 Updated for 1.0 By: Sixdd
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -85,7 +77,6 @@ Updated for 1.0 By: Sixdd
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 
