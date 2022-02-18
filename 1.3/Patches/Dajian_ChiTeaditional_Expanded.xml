@@ -8,8 +8,8 @@
       <value>
         <ThingDef ParentName="IvoryEngraved">
           <defName>engraved_ChineseDragonHorn</defName>
-          <label>engraved chinese dragon horn</label>
-          <description>An engraved chinese dragon's horn.</description>
+          <label>engraved Nian Beast horn</label>
+          <description>An engraved Nian Beast's horn.</description>
           <graphicData>
             <texPath>Things/Item/Special/ChineseDragonHornStatue</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -24,9 +24,9 @@
         </ThingDef>
         <RecipeDef ParentName="IvoryEngraving">
           <defName>engrave_ChineseDragonHorn</defName>
-          <label>engrave chinese dragon horn</label>
-          <description>Engrave chinese dragon horn with art.</description>
-          <jobString>engraving chinese dragon horn</jobString>
+          <label>engrave Nian Beast horn</label>
+          <description>Engrave Nian Beast horn with art.</description>
+          <jobString>engraving Nian Beast horn</jobString>
           <ingredients>
             <li>
               <filter>
