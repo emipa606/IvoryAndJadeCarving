@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="IvoryAndJadeCarving_UpdateFeatureBase">
     <modNameReadable>IvoryAndJadeCarving</modNameReadable>
     <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2052271495</linkUrl>
   </HugsLib.UpdateFeatureDef>
-  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+  <HugsLib.UpdateFeatureDef ParentName="IvoryAndJadeCarving_UpdateFeatureBase">
     <defName>IvoryAndJadeCarving_1_0_5_0</defName>
     <assemblyVersion>1.0.5.0</assemblyVersion>
     <content>Pretty large update, added support for 12 mods, totaling over 30 animal horns, tusks and antlers.
