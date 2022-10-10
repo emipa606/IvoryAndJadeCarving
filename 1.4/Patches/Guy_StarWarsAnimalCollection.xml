@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BanthaHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_BanthaHorn</defName>
+          <label>engraved bantha horn</label>
+          <description>An engraved bantha's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/BanthaHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>250</MarketValue>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>0.4</Flammability>
+            <Beauty>19</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_BanthaHorn</defName>
+          <label>engrave bantha horn</label>
+          <description>Engrave bantha horn with art.</description>
+          <jobString>engraving bantha horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>BanthaHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_BanthaHorn>1</engraved_BanthaHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>BanthaHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="KraytDragonHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_KraytDragonHorn</defName>
+          <label>engraved krayt dragon horn</label>
+          <description>An engraved krayt dragon's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/KraytDragonHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1400</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>0.4</Flammability>
+            <Beauty>19</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_KraytDragonHorn</defName>
+          <label>engrave krayt dragon horn</label>
+          <description>Engrave krayt dragon horn with art.</description>
+          <jobString>engraving krayt dragon horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>KraytDragonHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_KraytDragonHorn>1</engraved_KraytDragonHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>KraytDragonHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RancorSkull"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>stand_RancorSkull</defName>
+          <label>rancor skull</label>
+          <description>A rancor's skull.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/RancorSkullStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1700</MarketValue>
+            <MaxHitPoints>145</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>29</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>stand_RancorSkull</defName>
+          <label>make a stand for rancor skull</label>
+          <description>Make a stand for a rancor skull.</description>
+          <jobString>making a stand for a rancor skull</jobString>
+          <workAmount>500</workAmount>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>RancorSkull</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <stand_RancorSkull>1</stand_RancorSkull>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>RancorSkull</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

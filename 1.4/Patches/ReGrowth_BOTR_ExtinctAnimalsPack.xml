@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RG-EAP_WoollyMammothTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_RG-EAP_WoollyMammothTusk</defName>
+          <label>engraved woolly mammoth tusk</label>
+          <description>An engraved woolly mammoth's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/WoollyMammothTuskSculpture</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>200</MarketValue>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>18</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_RG-EAP_WoollyMammothTusk</defName>
+          <label>engrave woolly mammoth tusk</label>
+          <description>Engrave woolly mammoth tusk with art.</description>
+          <jobString>engraving woolly mammoth tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>RG-EAP_WoollyMammothTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_RG-EAP_WoollyMammothTusk>1</engraved_RG-EAP_WoollyMammothTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>RG-EAP_WoollyMammothTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AnimaThrumboHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_AnimaThrumboHorn</defName>
+          <label>engraved anima thrumbo horn</label>
+          <description>An engraved anima thrumbo's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/AnimaThrumboHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>2100</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>2.5</Mass>
+            <Flammability>0.2</Flammability>
+            <Beauty>55</Beauty>
+          </statBases>
+          <comps>
+            <li Class="CompProperties_Glower">
+              <glowRadius>3</glowRadius>
+              <glowColor>(160, 250, 255, 150)</glowColor>
+            </li>
+          </comps>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_AnimaThrumboHorn</defName>
+          <label>engrave anima thrumbo horn</label>
+          <description>Engrave anima thrumbo horn with art.</description>
+          <jobString>engraving anima thrumbo horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AnimaThrumboHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_AnimaThrumboHorn>1</engraved_AnimaThrumboHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>AnimaThrumboHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AnimaWargFang"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_AnimaWargFang</defName>
+          <label>engraved anima warg's razorfang</label>
+          <description>An engraved anima warg's razorfang.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/AnimaWargFangStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>800</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>25</Beauty>
+          </statBases>
+          <comps>
+            <li Class="CompProperties_Glower">
+              <glowRadius>2</glowRadius>
+              <glowColor>(160, 250, 255, 150)</glowColor>
+            </li>
+          </comps>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_AnimaWargFang</defName>
+          <label>engrave anima warg's razorfang</label>
+          <description>Engrave anima warg's razorfang with art.</description>
+          <jobString>engraving anima warg's razorfang</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AnimaWargFang</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_AnimaWargFang>1</engraved_AnimaWargFang>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>AnimaWargFang</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>
