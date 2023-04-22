@@ -79,6 +79,4 @@ Updated for 1.0 By: Sixdd
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2052271495]Last updated 2023-01-29
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2052271495]Last updated 2023-04-22
