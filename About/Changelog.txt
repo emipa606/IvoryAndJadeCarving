@@ -1,5 +1,8 @@
 # Changelog for IvoryAndJadeCarving
 
+1.4.4 - Added fat from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2553700067]Medieval Overhaul[/url] as alternative for Tallow for making candles for chandeliers
+
+
 1.4.3 - Fixed jade-band trading
 
 
