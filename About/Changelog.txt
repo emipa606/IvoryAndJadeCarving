@@ -1,5 +1,8 @@
 # Changelog for IvoryAndJadeCarving
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.5 - Storing jade bands will no longer remove the quality from them
 
 

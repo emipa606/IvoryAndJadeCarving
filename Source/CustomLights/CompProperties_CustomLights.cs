@@ -6,9 +6,9 @@ namespace CustomLights;
 
 public class CompProperties_CustomLights : CompProperties
 {
-    public string graphicPath = "Candle";
-    public List<Vector3> lightOffsets = new List<Vector3>();
-    public float lightSize = 1f;
+    public readonly string graphicPath = "Candle";
+    public readonly List<Vector3> lightOffsets = [];
+    public readonly float lightSize = 1f;
 
     public CompProperties_CustomLights()
     {

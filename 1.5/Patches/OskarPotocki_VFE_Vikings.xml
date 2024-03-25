@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VFEV_LothurrAntler"]</xpath>
+    <!-- <success>Always</success> -->
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_VFEV_LothurrAntler</defName>
+          <label>engraved lothurr antler</label>
+          <description>An engraved lothurr's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/LothurrAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>2200</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>10.8</Mass>
+            <Flammability>0.2</Flammability>
+            <Beauty>30</Beauty>
+          </statBases>
+          <comps>
+            <li Class="CompProperties_Glower">
+              <glowRadius>3</glowRadius>
+              <glowColor>(160, 250, 255, 150)</glowColor>
+            </li>
+          </comps>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_VFEV_LothurrAntler</defName>
+          <label>engrave lothurr antler</label>
+          <description>Engrave lothurr antler with art.</description>
+          <jobString>engraving lothurr antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>VFEV_LothurrAntler</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_VFEV_LothurrAntler>1</engraved_VFEV_LothurrAntler>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>VFEV_LothurrAntler</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+        <ThingDef ParentName="ChandelierBase">
+          <defName>VFEV_LothurrAntlerChandelier</defName>
+          <label>lothurr antler chandelier</label>
+          <description>A large chandelier made from the antlers of lothurr.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/LothurrAntlerChandelier</texPath>
+          </graphicData>
+          <statBases>
+            <MarketValue>15000</MarketValue>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Mass>60</Mass>
+            <Flammability>0.15</Flammability>
+            <Beauty>80</Beauty>
+          </statBases>
+          <comps Inherit="False">
+            <li>
+              <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+              <nameMaker>NamerArtSculpture</nameMaker>
+              <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+              <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+            </li>
+            <li Class="CompProperties_Glower">
+              <glowRadius>10</glowRadius>
+              <glowColor>(160, 250, 255, 150)</glowColor>
+            </li>
+          </comps>
+        </ThingDef>
+        <RecipeDef ParentName="ChandelierMaking">
+          <defName>make_VFEV_LothurrAntlerChandelier</defName>
+          <label>make engraved lothurr antler chandelier</label>
+          <description>Make a engraved lothurr antler chandelier.</description>
+          <jobString>making engraved lothurr antler chandelier</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>VFEV_LothurrAntler</li>
+                </thingDefs>
+              </filter>
+              <count>6</count>
+            </li>
+          </ingredients>
+          <products>
+            <VFEV_LothurrAntlerChandelier>1</VFEV_LothurrAntlerChandelier>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>VFEV_LothurrAntler</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

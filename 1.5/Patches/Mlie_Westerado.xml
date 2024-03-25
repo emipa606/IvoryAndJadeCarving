@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BisonHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_BisonHorn_Westerado</defName>
+          <label>engraved bison horn</label>
+          <description>An engraved bison's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/BisonHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.3</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>10</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_BisonHorn_Westerado</defName>
+          <label>engrave bison horn</label>
+          <description>Engrave bison horn with art.</description>
+          <jobString>engraving bison horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>BisonHorn_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_BisonHorn_Westerado>1</engraved_BisonHorn_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>BisonHorn_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="BoarTusk_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_BoarTusk_Westerado</defName>
+          <label>engraved boar tusk</label>
+          <description>An engraved boar's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/WildBoarTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>35</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.5</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>5</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_BoarTusk_Westerado</defName>
+          <label>engrave boar tusk</label>
+          <description>Engrave boar tusk with art.</description>
+          <jobString>engraving boar tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>BoarTusk_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_BoarTusk_Westerado>1</engraved_BoarTusk_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>BoarTusk_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CaribouAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_CaribouAntler_Westerado</defName>
+          <label>engraved caribou antler</label>
+          <description>An engraved caribou's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/CaribouAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>55</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>8</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_CaribouAntler_Westerado</defName>
+          <label>engrave caribou antler</label>
+          <description>Engrave caribou antler with art.</description>
+          <jobString>engraving caribou antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>CaribouAntler_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_CaribouAntler_Westerado>1</engraved_CaribouAntler_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>CaribouAntler_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DeerAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_DeerAntler_Westerado</defName>
+          <label>engraved deer antler</label>
+          <description>An engraved deer's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/DeerAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>45</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>7</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_DeerAntler_Westerado</defName>
+          <label>engrave deer antler</label>
+          <description>Engrave deer antler with art.</description>
+          <jobString>engraving deer antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>DeerAntler_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_DeerAntler_Westerado>1</engraved_DeerAntler_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>DeerAntler_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ElkAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_ElkAntler_Westerado</defName>
+          <label>engraved elk antler</label>
+          <description>An engraved elk's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ElkAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>65</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>9</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_ElkAntler_Westerado</defName>
+          <label>engrave elk antler</label>
+          <description>Engrave elk antler with art.</description>
+          <jobString>engraving elk antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ElkAntler_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_ElkAntler_Westerado>1</engraved_ElkAntler_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>ElkAntler_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="GazelleHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_GazelleHorn_Westerado</defName>
+          <label>engraved gazelle horn</label>
+          <description>An engraved gazelle's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/GazelleHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>45</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>7</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_GazelleHorn_Westerado</defName>
+          <label>engrave gazelle horn</label>
+          <description>Engrave gazelle horn with art.</description>
+          <jobString>engraving gazelle horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>GazelleHorn_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_GazelleHorn_Westerado>1</engraved_GazelleHorn_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>GazelleHorn_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="IbexHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_IbexHorn_Westerado</defName>
+          <label>engraved ibex horn</label>
+          <description>An engraved ibex's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/IbexHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>35</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>5</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_IbexHorn_Westerado</defName>
+          <label>engrave ibex horn</label>
+          <description>Engrave ibex horn with art.</description>
+          <jobString>engraving ibex horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>IbexHorn_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_IbexHorn_Westerado>1</engraved_IbexHorn_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>IbexHorn_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MooseAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_MooseAntler_Westerado</defName>
+          <label>engraved moose antler</label>
+          <description>An engraved moose's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MooseAntlersStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>75</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>10</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_MooseAntler_Westerado</defName>
+          <label>engrave moose antler</label>
+          <description>Engrave moose antler with art.</description>
+          <jobString>engraving moose antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>MooseAntler_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_MooseAntler_Westerado>2</engraved_MooseAntler_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>MooseAntler_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RhinoHorn_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_RhinoHorn_Westerado</defName>
+          <label>engraved rhinoceros horn</label>
+          <description>An engraved rhinoceros's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/RhinoHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>300</MarketValue>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>0.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>20</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_RhinoHorn_Westerado</defName>
+          <label>engrave rhinoceros horn</label>
+          <description>Engrave rhinoceros horn with art.</description>
+          <jobString>engraving rhinoceros horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>RhinoHorn_Westerado</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_RhinoHorn_Westerado>1</engraved_RhinoHorn_Westerado>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>RhinoHorn_Westerado</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DeerAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow" or defName="DankPyon_Fat"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>DeerAntlerChandelier</defName>
+            <label>deer antler chandelier</label>
+            <description>A large chandelier made from the antlers of deer.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/AntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>1200</MarketValue>
+              <MaxHitPoints>200</MaxHitPoints>
+              <Mass>8</Mass>
+              <Flammability>0.15</Flammability>
+              <Beauty>40</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.73,0.1,-0.18)</li>
+                  <li>(-0.71,0.1,-0.18)</li>
+                  <li>(0.43,0.1,-0.17)</li>
+                  <li>(-0.41,0.1,-0.17)</li>
+                  <li>(0.33,0.1,0.35)</li>
+                  <li>(-0.31,0.1,0.35)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_DeerAntlerChandelier</defName>
+            <label>make deer antler chandelier</label>
+            <description>Make a deer antler chandelier.</description>
+            <jobString>making deer antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>DeerAntler_Westerado</li>
+                  </thingDefs>
+                </filter>
+                <count>10</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <DeerAntlerChandelier>1</DeerAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>DeerAntler_Westerado</li>
+                <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CaribouAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow" or defName="DankPyon_Fat"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>CaribouAntlerChandelier</defName>
+            <label>Caribou antler chandelier</label>
+            <description>A large chandelier made from the antlers of Caribou.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/CaribouAntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>1200</MarketValue>
+              <MaxHitPoints>200</MaxHitPoints>
+              <Mass>8</Mass>
+              <Flammability>0.15</Flammability>
+              <Beauty>40</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.77,0.1,-0.2)</li>
+                  <li>(-0.81,0.1,-0.2)</li>
+                  <li>(0.48,0.1,-0.17)</li>
+                  <li>(-0.43,0.1,-0.17)</li>
+                  <li>(0.31,0.1,0.32)</li>
+                  <li>(-0.28,0.1,0.30)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_CaribouAntlerChandelier</defName>
+            <label>make caribou antler chandelier</label>
+            <description>Make a caribou antler chandelier.</description>
+            <jobString>making caribou antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>CaribouAntler_Westerado</li>
+                  </thingDefs>
+                </filter>
+                <count>8</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <CaribouAntlerChandelier>1</CaribouAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>CaribouAntler_Westerado</li>
+                <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MooseAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow" or defName="DankPyon_Fat"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>MooseAntlerChandelier</defName>
+            <label>moose antler chandelier</label>
+            <description>A large chandelier made from the antlers of moose.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/MooseAntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>150</MarketValue>
+              <MaxHitPoints>400</MaxHitPoints>
+              <Mass>8</Mass>
+              <Flammability>0.9</Flammability>
+              <Beauty>25</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.71,0.1,-0.3)</li>
+                  <li>(-0.69,0.1,-0.3)</li>
+                  <li>(0.47,0.1,-0.04)</li>
+                  <li>(-0.47,0.1,-0.04)</li>
+                  <li>(0.23,0.1,0.20)</li>
+                  <li>(-0.2,0.1,0.20)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_MooseAntlerChandelier</defName>
+            <label>make moose antler chandelier</label>
+            <description>Make a moose antler chandelier.</description>
+            <jobString>making moose antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>MooseAntler_Westerado</li>
+                  </thingDefs>
+                </filter>
+                <count>8</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <MooseAntlerChandelier>1</MooseAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>MooseAntler_Westerado</li>
+                <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ElkAntler_Westerado"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow" or defName="DankPyon_Fat"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>ElkAntlerChandelier</defName>
+            <label>elk antler chandelier</label>
+            <description>A large chandelier made from the antlers of elk.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/ElkAntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>60</MarketValue>
+              <MaxHitPoints>320</MaxHitPoints>
+              <Mass>6</Mass>
+              <Flammability>0.9</Flammability>
+              <Beauty>18</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.62,0.1,-0.27)</li>
+                  <li>(-0.6,0.1,-0.27)</li>
+                  <li>(0.40,0.1,0)</li>
+                  <li>(-0.38,0.1,0)</li>
+                  <li>(0.20,0.1,0.42)</li>
+                  <li>(-0.18,0.1,0.42)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_ElkAntlerChandelier</defName>
+            <label>make elk antler chandelier</label>
+            <description>Make an elk antler chandelier.</description>
+            <jobString>making elk antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>ElkAntler_Westerado</li>
+                  </thingDefs>
+                </filter>
+                <count>6</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <ElkAntlerChandelier>1</ElkAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>ElkAntler_Westerado</li>
+                <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+</Patch>
