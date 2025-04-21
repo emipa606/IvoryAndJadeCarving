@@ -1,4 +1,4 @@
-# IvoryAndJadeCarving
+# [Ivory and Jade Carving (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2052271495)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -14,39 +14,37 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1937195557
 Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers in the following mods:
 
 
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2208467668]Animal Collab Project Vanilla-Style
-- https://steamcommunity.com/workshop/filedetails/?id=2250773505]Erin's Mountain Animals
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241]Legacy Ark
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2243330771]Lord of the Rims - Dwarves
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2244183992]Lord of the Rims - Elves
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938]Megafauna
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2266685892][HLX] ReGrowth - Extinct Animals Pack
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2209367890]Tortoise Armor
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2280503138]Unique Antelopes
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1895364585]Vanilla Animals Expanded — Tundra
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2231295285]Vanilla Factions Expanded - Vikings
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2236973780]Westerado
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1336473924]Deer Extension
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2339084391]Anima Animals
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1136958577]Dinosauria
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2053120429]Mamuffalo
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2255098912]Muffalant
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2006670799]StarWars Animal Collection
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856]Alpha Animals
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1865990377]Royal Thrumbos
-- https://steamcommunity.com/sharedfiles/filedetails/?id=1612308782]Red Dragon
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123]Apothecary
-- https://steamcommunity.com/sharedfiles/filedetails/?id=2371079000]【SZ】含商咀徵——神州文化扩展 Chinese Traditional Cultural Things Expanded
+- [Animal Collab Project Vanilla-Style](https://steamcommunity.com/sharedfiles/filedetails/?id=2208467668)
+- [Erin's Mountain Animals](https://steamcommunity.com/workshop/filedetails/?id=2250773505)
+- [Legacy Ark](https://steamcommunity.com/sharedfiles/filedetails/?id=2070686241)
+- [Lord of the Rims - Dwarves](https://steamcommunity.com/sharedfiles/filedetails/?id=2243330771)
+- [Lord of the Rims - Elves](https://steamcommunity.com/sharedfiles/filedetails/?id=2244183992)
+- [Megafauna](https://steamcommunity.com/sharedfiles/filedetails/?id=1055485938)
+- [[HLX] ReGrowth - Extinct Animals Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2266685892)
+- [Tortoise Armor](https://steamcommunity.com/sharedfiles/filedetails/?id=2209367890)
+- [Unique Antelopes](https://steamcommunity.com/sharedfiles/filedetails/?id=2280503138)
+- [Vanilla Animals Expanded — Tundra](https://steamcommunity.com/sharedfiles/filedetails/?id=1895364585)
+- [Vanilla Factions Expanded - Vikings](https://steamcommunity.com/sharedfiles/filedetails/?id=2231295285)
+- [Westerado](https://steamcommunity.com/sharedfiles/filedetails/?id=2236973780)
+- [Deer Extension](https://steamcommunity.com/sharedfiles/filedetails/?id=1336473924)
+- [Anima Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=2339084391)
+- [Dinosauria](https://steamcommunity.com/sharedfiles/filedetails/?id=1136958577)
+- [Mamuffalo](https://steamcommunity.com/sharedfiles/filedetails/?id=2053120429)
+- [Muffalant](https://steamcommunity.com/sharedfiles/filedetails/?id=2255098912)
+- [StarWars Animal Collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2006670799)
+- [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856)
+- [Royal Thrumbos](https://steamcommunity.com/sharedfiles/filedetails/?id=1865990377)
+- [Red Dragon](https://steamcommunity.com/sharedfiles/filedetails/?id=1612308782)
+- [Apothecary](https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123)
+- [【SZ】含商咀徵——神州文化扩展 Chinese Traditional Cultural Things Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2371079000)
 
 
 
 - All carving-graphics made by Hydromancerx
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 !!This is a repost and not my own work. All credit goes to the original author as noted below.!!
 
@@ -73,13 +71,12 @@ Updated for 1.0 By: Sixdd
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2052271495]![Image](https://img.shields.io/github/v/release/emipa606/IvoryAndJadeCarving?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/IvoryAndJadeCarving?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2052271495) | tags: art,  beauty
