@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 1751308792
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c014944d8b3cebc577b95a40b098671f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c014944d8b3cebc577b95a40b098671f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/WildBoarTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/CaribouHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/WalrusTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ZygolophodonTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/LonghornHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/GemsbokHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/KraytDragonHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/BighornHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/AnimaWargFangStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MooseAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/BisonHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Candle/CandleB.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/AntlerChandelier.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/DeinotheriumTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ElephantTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/TriceratopsHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/LothurrAntlerChandelier.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/DankPyon_RoxHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/CaribouAntler.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/jade_band.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/RoyalHornMStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/CactipineQuillStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Candle/CandleA.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/GazelleHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MamuffaloTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/DeerAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/DankPyon_DireBoarTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/CaribouAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/jade_urn.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/JacobHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ThromboHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MooseAntler.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/CaribouAntlerChandelier.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/thrombo_carved.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MammothTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MegalocerosAntlersStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/BongoHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/BanthaHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/LothurrAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ivory_figure.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ivory_carved.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/GallatrossHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/IbexHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/RoyalHornFStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/LothlorienAntler.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/RedDragonHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ArapawaHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MooseAntlersStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/LothlorienAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ChineseDragonHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/DankPyon_DaerAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/KraytdragonSkullStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ElasmotheriumHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/AnimaThrumboHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Candle/CandleC.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/GiantBoarTusk.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/RhinoHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/WoollyMammothTuskSculpture.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/AntlerPiloseStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ElkAntlerStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/RancorSkullStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/TortiseShellStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/TyrannosaurusRexSkullStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/CaribouHornChandelier.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ArgaliHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MouflonHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/AddaxHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ElkAntlerChandelier.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/GiantBoarTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/RackaHornStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/PlatybelodonTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/ArgaliHorn.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/SmilodonFangStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MooseAntlerChandelier.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/MuffalantTuskStatue.png
+- Assets/Data/Mlie.IvoryAndJadeCarving/Textures/Things/Item/Special/AnkoleHornStatue.png
+Dependencies: []

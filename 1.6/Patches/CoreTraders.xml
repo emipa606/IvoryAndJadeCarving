@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationInsert">
+    <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="BuildingsFurniture"]</xpath>
+    <value>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>ivory_figure</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>jade_urn</thingDef>
+      </li>
+    </value>
+  </Operation>
+</Patch>

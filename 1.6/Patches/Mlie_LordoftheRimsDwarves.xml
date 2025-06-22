@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LotRD_GiantBoarRace"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="ResourceVerbBase">
+          <defName>LOTRGiantBoarTusk</defName>
+          <label>giant boar tusk</label>
+          <description>A tusk from a giant boar, can be used as a weapon or sold for profit.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/GiantBoarTusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <equippedAngleOffset>-20</equippedAngleOffset>
+          <statBases>
+            <MarketValue>60</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.1</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+          </statBases>
+          <tools>
+            <li>
+              <label>point</label>
+              <capacities>
+                <li>Scratch</li>
+                <li>Stab</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+              <label>base</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>6</power>
+              <cooldownTime>2</cooldownTime>
+              <chanceFactor>0.5</chanceFactor>
+            </li>
+          </tools>
+          <resourceReadoutPriority>Middle</resourceReadoutPriority>
+          <stackLimit>10</stackLimit>
+          <thingCategories>
+            <li>Items</li>
+          </thingCategories>
+          <tradeTags>
+            <li>ExoticMisc</li>
+          </tradeTags>
+          <thingSetMakerTags>
+            <li>AnimalPart</li>
+          </thingSetMakerTags>
+        </ThingDef>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_LOTRGiantBoarTusk</defName>
+          <label>engraved giant boar tusk</label>
+          <description>An engraved giant boar's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/GiantBoarTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>180</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>17</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_LOTRGiantBoarTusk</defName>
+          <label>engrave giant boar tusk</label>
+          <description>Engrave giant boar tusk with art.</description>
+          <jobString>engraving giant boar tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>LOTRGiantBoarTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_LOTRGiantBoarTusk>1</engraved_LOTRGiantBoarTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>LOTRGiantBoarTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/PawnKindDef[defName="LotRD_GiantBoarKind"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="LotRD_GiantBoarKind"]/lifeStages/li[3]</xpath>
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>TuskAttackTool</bodyPartGroup>
+          <thing>LOTRGiantBoarTusk</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </match>
+  </Operation>
+</Patch>

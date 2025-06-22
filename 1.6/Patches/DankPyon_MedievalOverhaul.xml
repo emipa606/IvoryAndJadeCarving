@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DankPyon_DireBoarTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_DankPyon_DireBoarTusk</defName>
+          <label>engraved dire boar tusk</label>
+          <description>An engraved dire boar tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/DankPyon_DireBoarTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>120</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>15</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_DankPyon_DireBoarTusk</defName>
+          <label>engrave dire boar tusk</label>
+          <description>Engrave dire boar tusk with art.</description>
+          <jobString>engraving dire boar tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>DankPyon_DireBoarTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_DankPyon_DireBoarTusk>1</engraved_DankPyon_DireBoarTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>DankPyon_DireBoarTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DankPyon_DaerAntler"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_DankPyon_DaerAntler</defName>
+          <label>engraved daer antler</label>
+          <description>An engraved bongo's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/DankPyon_DaerAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1800</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>2.5</Mass>
+            <Flammability>0.4</Flammability>
+            <Beauty>45</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_DankPyon_DaerAntler</defName>
+          <label>engrave daer antler</label>
+          <description>Engrave daer antler with art.</description>
+          <jobString>engraving daer antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>DankPyon_DaerAntler</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_DankPyon_DaerAntler>1</engraved_DankPyon_DaerAntler>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>DankPyon_DaerAntler</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DankPyon_RoxHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_DankPyon_RoxHorn</defName>
+          <label>engraved rox horn</label>
+          <description>An engraved rox horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/DankPyon_RoxHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>2.2</Mass>
+            <Flammability>0.5</Flammability>
+            <Beauty>19</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_DankPyon_RoxHorn</defName>
+          <label>engrave rox horn</label>
+          <description>Engrave rox horn with art.</description>
+          <jobString>engraving rox horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>DankPyon_RoxHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_DankPyon_RoxHorn>1</engraved_DankPyon_RoxHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>DankPyon_RoxHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

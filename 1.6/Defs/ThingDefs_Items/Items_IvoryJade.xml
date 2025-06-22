@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>UnfinishedCarvedSculpture</defName>
+    <label>unfinished carving</label>
+    <description>An unfinished carving.</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+  <ThingDef Abstract="True" Name="ChandelierBase" ParentName="BuildingBase">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Item</altitudeLayer>
+    <passability>Standable</passability>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <tickerType>Normal</tickerType>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canPlaceOverWall>false</canPlaceOverWall>
+    </building>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>0.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>CustomLights.PlaceWorker_IsUnderRoof</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <clearBuildingArea>false</clearBuildingArea>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  <ThingDef Abstract="True" Name="IvoryEngraved" ParentName="BuildingBase">
+    <thingClass>Building_Art</thingClass>
+    <altitudeLayer>Item</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsArt</li>
+    </thingCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+      <canPlaceOverWall>false</canPlaceOverWall>
+    </building>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <SellPriceFactor>1.10</SellPriceFactor>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtSculpture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.12)</li>
+                <!-- awful -->
+                <li>(1,0.16)</li>
+                <!-- poor -->
+                <li>(2,0.20)</li>
+                <!-- normal -->
+                <li>(3,0.22)</li>
+                <!-- good -->
+                <li>(4,0.24)</li>
+                <!-- excellent -->
+                <li>(5,0.26)</li>
+                <!-- masterwork -->
+                <li>(6,0.28)</li>
+                <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+            <defs>
+              <li>SculptureSmall</li>
+              <li>SculptureLarge</li>
+              <li>SculptureGrand</li>
+            </defs>
+            <radius>9.9</radius>
+            <maxBuildings>8</maxBuildings>
+            <focusPerQuality>
+              <points>
+                <li>(0,0.0)</li>
+                <!-- awful -->
+                <li>(1,0.0)</li>
+                <!-- poor -->
+                <li>(2,0.01)</li>
+                <!-- normal -->
+                <li>(3,0.01)</li>
+                <!-- good -->
+                <li>(4,0.01)</li>
+                <!-- excellent -->
+                <li>(5,0.02)</li>
+                <!-- masterwork -->
+                <li>(6,0.02)</li>
+                <!-- legendary -->
+              </points>
+            </focusPerQuality>
+            <explanationKey>MeditationFocusPerSculpture</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <clearBuildingArea>false</clearBuildingArea>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  <ThingDef ParentName="IvoryEngraved">
+    <defName>ivory_carved</defName>
+    <label>engraved elephant tusk</label>
+    <description>An engraved elephant's tusk.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ElephantTuskStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>120</MarketValue>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Mass>1.7</Mass>
+      <Flammability>0.9</Flammability>
+      <Beauty>20</Beauty>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="IvoryEngraved">
+    <defName>thrumbo_carved</defName>
+    <label>engraved thrumbo horn</label>
+    <description>An engraved thrumbo horn.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ThromboHornStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>2.8</Mass>
+      <Flammability>0.4</Flammability>
+      <Beauty>25</Beauty>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>ivory_figure</defName>
+    <label>ivory figure</label>
+    <description>A small figure carved from ivory.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ivory_figure</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <MaxHitPoints>35</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>0.9</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>5</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>75</stackLimit>
+    <costList>
+      <ElephantTusk>1</ElephantTusk>
+    </costList>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>jade_urn</defName>
+    <label>jade urn</label>
+    <description>A small urn carved from jade.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/jade_urn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>0.3</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>5</Beauty>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>75</stackLimit>
+    <costList>
+      <Jade>10</Jade>
+    </costList>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="ApparelBase">
+    <defName>jade_band</defName>
+    <label>jade band</label>
+    <description>A pretty band worn on the wrist. Increases social abilities slightly.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/jade_band</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.15</NegotiationAbility>
+      <TradePriceImprovement>0.05</TradePriceImprovement>
+    </equippedStatOffsets>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <costList>
+      <Jade>10</Jade>
+    </costList>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VBY_TortoiseShell"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_VBY_TortoiseShell</defName>
+          <label>engraved tortoise shell</label>
+          <description>An engraved tortoise's shell.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/TortiseShellStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>50</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.15</Flammability>
+            <Beauty>10</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_VBY_TortoiseShell</defName>
+          <label>engrave tortoise shell</label>
+          <description>Engrave tortoise shell with art.</description>
+          <jobString>engraving tortoise shell</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>VBY_TortoiseShell</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_VBY_TortoiseShell>1</engraved_VBY_TortoiseShell>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>VBY_TortoiseShell</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

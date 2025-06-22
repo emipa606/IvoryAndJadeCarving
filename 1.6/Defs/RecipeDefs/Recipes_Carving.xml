@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef Abstract="True" Name="IvoryEngraving">
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableSculpting</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+  <RecipeDef Abstract="True" Name="ChandelierMaking">
+    <workAmount>4500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>TableSculpting</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef ParentName="IvoryEngraving">
+    <defName>engrave_tusk</defName>
+    <label>engrave elephant tusk</label>
+    <description>Engrave elephant tusks with art.</description>
+    <jobString>engraving elephant tusk</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ElephantTusk</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ivory_carved>1</ivory_carved>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ElephantTusk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef ParentName="IvoryEngraving">
+    <defName>engrave_thrumbo</defName>
+    <label>engrave thrumbo horn</label>
+    <description>Engrave thrumbo horns with art.</description>
+    <jobString>engraving thrumbo horn</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ThrumboHorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <thrumbo_carved>1</thrumbo_carved>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ThrumboHorn</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>carve_ivory_figures</defName>
+    <label>carve ivory figures</label>
+    <description>Carve ivory into three small figures.</description>
+    <jobString>carving ivory figures</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ElephantTusk</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ivory_figure>3</ivory_figure>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ElephantTusk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>carve_jade_urn</defName>
+    <label>carve jade urn</label>
+    <description>Carve an urn from jade.</description>
+    <jobString>carving jade urn</jobString>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <jade_urn>1</jade_urn>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Jade</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>carve_jade_band</defName>
+    <label>carve jade band</label>
+    <description>Carve a band from jade. It can be worn to boost social skills slightly.</description>
+    <jobString>carving jade band</jobString>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <unfinishedThingDef>UnfinishedCarvedSculpture</unfinishedThingDef>
+    <workSkill>Artistic</workSkill>
+    <recipeUsers>
+      <li>TableSculpting</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <jade_band>1</jade_band>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Jade</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

@@ -37,10 +37,11 @@ Adds carvings for horn/antler/tusk-animals and placeable skulls and chandeliers 
 - [Red Dragon](https://steamcommunity.com/sharedfiles/filedetails/?id=1612308782)
 - [Apothecary](https://steamcommunity.com/sharedfiles/filedetails/?id=2195469123)
 - [【SZ】含商咀徵——神州文化扩展 Chinese Traditional Cultural Things Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2371079000)
+- [Medieval Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926)
 
 
 
-- All carving-graphics made by Hydromancerx
+- Most carving-graphics made by Hydromancerx
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 	

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DragonHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_DragonHorn</defName>
+          <label>engraved dragon horn</label>
+          <description>An engraved dragon's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/RedDragonHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>5500</MarketValue>
+            <MaxHitPoints>190</MaxHitPoints>
+            <Mass>9.5</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>39</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_DragonHorn</defName>
+          <label>engrave dragon horn</label>
+          <description>Engrave dragon horn with art.</description>
+          <jobString>engraving dragon horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>DragonHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_DragonHorn>1</engraved_DragonHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>DragonHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

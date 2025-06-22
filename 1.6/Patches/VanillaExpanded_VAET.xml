@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AEXP_Moose"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="ResourceBase">
+          <defName>AEXP_MooseAntler</defName>
+          <label>moose antler</label>
+          <description>A antler from a moose, can be sold for profit.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MooseAntler</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>60</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.1</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+          </statBases>
+          <resourceReadoutPriority>Middle</resourceReadoutPriority>
+          <stackLimit>10</stackLimit>
+          <thingCategories>
+            <li>Items</li>
+          </thingCategories>
+          <tradeTags>
+            <li>ExoticMisc</li>
+          </tradeTags>
+          <thingSetMakerTags>
+            <li>AnimalPart</li>
+          </thingSetMakerTags>
+        </ThingDef>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_AEXP_MooseAntler</defName>
+          <label>engraved moose antler</label>
+          <description>An engraved moose's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MooseAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>180</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>17</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_AEXP_MooseAntler</defName>
+          <label>engrave moose antler</label>
+          <description>Engrave moose antler with art.</description>
+          <jobString>engraving moose antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AEXP_MooseAntler</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_AEXP_MooseAntler>1</engraved_AEXP_MooseAntler>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>AEXP_MooseAntler</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/PawnKindDef[defName="AEXP_Moose"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="AEXP_Moose"]/lifeStages/li[3]</xpath>
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HornAttackTool</bodyPartGroup>
+          <thing>AEXP_MooseAntler</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ACPWalrusTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_ACPWalrusTusk</defName>
+          <label>engraved walrus tusk</label>
+          <description>An engraved walrus's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/WalrusTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>320</MarketValue>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>22</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_ACPWalrusTusk</defName>
+          <label>engrave walrus tusk</label>
+          <description>Engrave walrus tusks with art.</description>
+          <jobString>engraving walrus tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ACPWalrusTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_ACPWalrusTusk>1</engraved_ACPWalrusTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>ACPWalrusTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

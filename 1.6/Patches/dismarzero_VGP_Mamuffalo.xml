@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MamuffaloTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_MamuffaloTusk</defName>
+          <label>engraved mamuffalo tusk</label>
+          <description>An engraved mamuffalo's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MamuffaloTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>150</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>1.6</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>14</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_MamuffaloTusk</defName>
+          <label>engrave mamuffalo tusk</label>
+          <description>Engrave mamuffalo tusk with art.</description>
+          <jobString>engraving mamuffalo tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>MamuffaloTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_MamuffaloTusk>1</engraved_MamuffaloTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>MamuffaloTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

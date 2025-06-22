@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RoyalThrumbo_HornFemale"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_RoyalThrumbo_HornFemale</defName>
+          <label>engraved female royal thrumbo horn</label>
+          <description>An engraved female royal thrumbo horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/RoyalHornFStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1900</MarketValue>
+            <MaxHitPoints>145</MaxHitPoints>
+            <Mass>2.9</Mass>
+            <Flammability>0.4</Flammability>
+            <Beauty>25</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_RoyalThrumbo_HornFemale</defName>
+          <label>engrave female royal thrumbo horn</label>
+          <description>Engrave female royal thrumbo horn with art.</description>
+          <jobString>engraving female royal thrumbo horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>RoyalThrumbo_HornFemale</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_RoyalThrumbo_HornFemale>1</engraved_RoyalThrumbo_HornFemale>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>RoyalThrumbo_HornFemale</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RoyalThrumbo_HornMale"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_RoyalThrumbo_HornMale</defName>
+          <label>engraved male royal thrumbo horn</label>
+          <description>An engraved male royal thrumbo horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/RoyalHornMStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1900</MarketValue>
+            <MaxHitPoints>145</MaxHitPoints>
+            <Mass>2.9</Mass>
+            <Flammability>0.4</Flammability>
+            <Beauty>25</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_RoyalThrumbo_HornMale</defName>
+          <label>engrave male royal thrumbo horn</label>
+          <description>Engrave male royal thrumbo horn with art.</description>
+          <jobString>engraving male royal thrumbo horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>RoyalThrumbo_HornMale</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_RoyalThrumbo_HornMale>1</engraved_RoyalThrumbo_HornMale>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>RoyalThrumbo_HornMale</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

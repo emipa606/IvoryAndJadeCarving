@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SZ_NianShouJiao"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_ChineseDragonHorn</defName>
+          <label>engraved Nian Beast horn</label>
+          <description>An engraved Nian Beast's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ChineseDragonHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>6500</MarketValue>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>0.8</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>52</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_ChineseDragonHorn</defName>
+          <label>engrave Nian Beast horn</label>
+          <description>Engrave Nian Beast horn with art.</description>
+          <jobString>engraving Nian Beast horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>SZ_NianShouJiao</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_ChineseDragonHorn>1</engraved_ChineseDragonHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>SZ_NianShouJiao</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

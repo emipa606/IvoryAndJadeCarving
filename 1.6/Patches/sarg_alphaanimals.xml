@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_CactipineQuill"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_AA_CactipineQuill</defName>
+          <label>engraved cactipine quill</label>
+          <description>An engraved cactipine quill.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/CactipineQuillStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>60</MarketValue>
+            <MaxHitPoints>65</MaxHitPoints>
+            <Mass>0.5</Mass>
+            <Flammability>1.3</Flammability>
+            <Beauty>15</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_AA_CactipineQuill</defName>
+          <label>engrave cactipine quill</label>
+          <description>Engrave cactipine quill with art.</description>
+          <jobString>engraving cactipine quill</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AA_CactipineQuill</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_AA_CactipineQuill>1</engraved_AA_CactipineQuill>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>AA_CactipineQuill</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AA_GallatrossHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_AA_GallatrossHorn</defName>
+          <label>engraved gallatross horn</label>
+          <description>An engraved gallatross horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/GallatrossHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1500</MarketValue>
+            <MaxHitPoints>240</MaxHitPoints>
+            <Mass>4.7</Mass>
+            <Flammability>0.4</Flammability>
+            <Beauty>29</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_AA_GallatrossHorn</defName>
+          <label>engrave gallatross horn</label>
+          <description>Engrave gallatross horn with art.</description>
+          <jobString>engraving gallatross horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>AA_GallatrossHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_AA_GallatrossHorn>1</engraved_AA_GallatrossHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>AA_GallatrossHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

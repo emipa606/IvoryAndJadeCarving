@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: carve ivory figures -->
+  <carve_ivory_figures.label>carve ivory figures</carve_ivory_figures.label>
+  <!-- EN: Carve ivory into three small figures. -->
+  <carve_ivory_figures.description>Carve ivory into three small figures.</carve_ivory_figures.description>
+  <!-- EN: carving ivory figures -->
+  <carve_ivory_figures.jobString>carving ivory figures</carve_ivory_figures.jobString>
+  <!-- EN: carve jade band -->
+  <carve_jade_band.label>carve jade band</carve_jade_band.label>
+  <!-- EN: Carve a band from jade. It can be worn to boost social skills slightly. -->
+  <carve_jade_band.description>Carve a band from jade. It can be worn to boost social skills slightly.</carve_jade_band.description>
+  <!-- EN: carving jade band -->
+  <carve_jade_band.jobString>carving jade band</carve_jade_band.jobString>
+  <!-- EN: carve jade urn -->
+  <carve_jade_urn.label>carve jade urn</carve_jade_urn.label>
+  <!-- EN: Carve an urn from jade. -->
+  <carve_jade_urn.description>Carve an urn from jade.</carve_jade_urn.description>
+  <!-- EN: carving jade urn -->
+  <carve_jade_urn.jobString>carving jade urn</carve_jade_urn.jobString>
+  <!-- EN: engrave thrumbo horn -->
+  <engrave_thrumbo.label>engrave thrumbo horn</engrave_thrumbo.label>
+  <!-- EN: Engrave thrumbo horns with art. -->
+  <engrave_thrumbo.description>Engrave thrumbo horns with art.</engrave_thrumbo.description>
+  <!-- EN: engraving thrumbo horn -->
+  <engrave_thrumbo.jobString>engraving thrumbo horn</engrave_thrumbo.jobString>
+  <!-- EN: engrave elephant tusk -->
+  <engrave_tusk.label>engrave elephant tusk</engrave_tusk.label>
+  <!-- EN: Engrave elephant tusks with art. -->
+  <engrave_tusk.description>Engrave elephant tusks with art.</engrave_tusk.description>
+  <!-- EN: engraving elephant tusk -->
+  <engrave_tusk.jobString>engraving elephant tusk</engrave_tusk.jobString>
+</LanguageData>

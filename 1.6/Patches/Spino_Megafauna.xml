@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="DeinotheriumTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_DeinotheriumTusk</defName>
+          <label>engraved deinotherium tusk</label>
+          <description>An engraved deinotherium's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/DeinotheriumTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1500</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>25</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_DeinotheriumTusk</defName>
+          <label>engrave deinotherium tusk</label>
+          <description>Engrave deinotherium tusk with art.</description>
+          <jobString>engraving deinotherium tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>DeinotheriumTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_DeinotheriumTusk>1</engraved_DeinotheriumTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>DeinotheriumTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ElasmotheriumHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_ElasmotheriumHorn</defName>
+          <label>engraved elasmotherium horn</label>
+          <description>An engraved elasmotherium's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ElasmotheriumHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>2000</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>27</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_ElasmotheriumHorn</defName>
+          <label>engrave elasmotherium horn</label>
+          <description>Engrave elasmotherium horn with art.</description>
+          <jobString>engraving elasmotherium horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ElasmotheriumHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_ElasmotheriumHorn>1</engraved_ElasmotheriumHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>ElasmotheriumHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MammothTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_MammothTusk</defName>
+          <label>engraved mammoth tusk</label>
+          <description>An engraved mammoth's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MammothTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1200</MarketValue>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>23</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_MammothTusk</defName>
+          <label>engrave mammoth tusk</label>
+          <description>Engrave mammoth tusk with art.</description>
+          <jobString>engraving mammoth tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>MammothTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_MammothTusk>1</engraved_MammothTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>MammothTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MegalocerosAntlers"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_MegalocerosAntlers</defName>
+          <label>engraved megaloceros antlers</label>
+          <description>An engraved megaloceros's antlers.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/MegalocerosAntlersStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1600</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>2.5</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>21</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_MegalocerosAntlers</defName>
+          <label>engrave megaloceros antlers</label>
+          <description>Engrave megaloceros antlers with art.</description>
+          <jobString>engraving megaloceros antlers</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>MegalocerosAntlers</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_MegalocerosAntlers>2</engraved_MegalocerosAntlers>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>MegalocerosAntlers</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PlatybelodonTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_PlatybelodonTusk</defName>
+          <label>engraved platybelodon tusk</label>
+          <description>An engraved platybelodon's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/PlatybelodonTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>550</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>19</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_PlatybelodonTusk</defName>
+          <label>engrave platybelodon tusk</label>
+          <description>Engrave platybelodon tusk with art.</description>
+          <jobString>engraving platybelodon tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>PlatybelodonTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_PlatybelodonTusk>1</engraved_PlatybelodonTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>PlatybelodonTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="SmilodonFangs"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_SmilodonFang</defName>
+          <label>engraved smilodon fang</label>
+          <description>An engraved smilodon's fang.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/SmilodonFangStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.8</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>21</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_SmilodonFangs</defName>
+          <label>engrave smilodon fangs</label>
+          <description>Engrave smilodon fangs with art.</description>
+          <jobString>engraving smilodon fangs</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>SmilodonFangs</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_SmilodonFang>2</engraved_SmilodonFang>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>SmilodonFangs</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ZygolophodonTusk"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_ZygolophodonTusk</defName>
+          <label>engraved zygolophodon tusk</label>
+          <description>An engraved zygolophodon's tusk.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ZygolophodonTuskStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1200</MarketValue>
+            <MaxHitPoints>280</MaxHitPoints>
+            <Mass>6</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>24</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_ZygolophodonTusk</defName>
+          <label>engrave zygolophodon tusk</label>
+          <description>Engrave zygolophodon tusk with art.</description>
+          <jobString>engraving zygolophodon tusk</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ZygolophodonTusk</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_ZygolophodonTusk>1</engraved_ZygolophodonTusk>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>ZygolophodonTusk</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

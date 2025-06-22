@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LotRE_DeerMallornKindHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="AYTallow" or defName="DankPyon_Fat"]</xpath>
+      <success>Always</success>
+      <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <ThingDef ParentName="ChandelierBase">
+            <defName>LorienAntlerChandelier</defName>
+            <label>lórien antler chandelier</label>
+            <description>A large chandelier made from the antlers of lórien.</description>
+            <graphicData>
+              <texPath>Things/Item/Special/CaribouAntlerChandelier</texPath>
+            </graphicData>
+            <statBases>
+              <MarketValue>1200</MarketValue>
+              <MaxHitPoints>200</MaxHitPoints>
+              <Mass>8</Mass>
+              <Flammability>0.15</Flammability>
+              <Beauty>40</Beauty>
+            </statBases>
+            <comps>
+              <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </fuelFilter>
+                <destroyOnNoFuel>false</destroyOnNoFuel>
+                <initialFuelPercent>1</initialFuelPercent>
+              </li>
+              <li Class="CustomLights.CompProperties_CustomLights">
+                <lightSize>0.05</lightSize>
+                <lightOffsets>
+                  <li>(0.77,0.1,-0.2)</li>
+                  <li>(-0.81,0.1,-0.2)</li>
+                  <li>(0.48,0.1,-0.17)</li>
+                  <li>(-0.43,0.1,-0.17)</li>
+                  <li>(0.31,0.1,0.32)</li>
+                  <li>(-0.28,0.1,0.30)</li>
+                </lightOffsets>
+              </li>
+            </comps>
+          </ThingDef>
+          <RecipeDef ParentName="ChandelierMaking">
+            <defName>make_LorienAntlerChandelier</defName>
+            <label>make lórien antler chandelier</label>
+            <description>Make a lórien antler chandelier.</description>
+            <jobString>making lórien antler chandelier</jobString>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>LotRE_DeerMallornKindHorn</li>
+                  </thingDefs>
+                </filter>
+                <count>8</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                    <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                  </thingDefs>
+                </filter>
+                <count>120</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Cloth</li>
+                  </thingDefs>
+                </filter>
+                <count>12</count>
+              </li>
+            </ingredients>
+            <products>
+              <LorienAntlerChandelier>1</LorienAntlerChandelier>
+            </products>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>LotRE_DeerMallornKindHorn</li>
+                <li MayRequire="Mlie.Apothecary">AYTallow</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_Fat</li>
+                <li>Cloth</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+          </RecipeDef>
+        </value>
+      </match>
+    </match>
+  </Operation>
+</Patch>

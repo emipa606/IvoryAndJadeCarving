@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="PiloseAntler"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_PiloseAntler</defName>
+          <label>engraved pilose antler</label>
+          <description>An engraved pilose's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/AntlerPiloseStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>800</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>0.4</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>20</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_PiloseAntler</defName>
+          <label>engrave pilose antler</label>
+          <description>Engrave pilose antler with art.</description>
+          <jobString>engraving pilose antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>PiloseAntler</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_PiloseAntler>1</engraved_PiloseAntler>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>PiloseAntler</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="CaribouHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_CaribouHorn</defName>
+          <label>engraved caribou horn</label>
+          <description>An engraved caribou's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/CaribouHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>900</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>0.9</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>22</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_CaribouHorn</defName>
+          <label>engrave caribou horn</label>
+          <description>Engrave caribou horn with art.</description>
+          <jobString>engraving caribou horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>CaribouHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_CaribouHorn>1</engraved_CaribouHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>CaribouHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

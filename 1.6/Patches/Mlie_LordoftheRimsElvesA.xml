@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="LotRE_DeerMallorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="ResourceBase">
+          <defName>LotRE_DeerMallornKindHorn</defName>
+          <label>lórien deer antler</label>
+          <description>A antler from a lórien deer, can be sold for profit.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/LothlorienAntler</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>80</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.3</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+          </statBases>
+          <resourceReadoutPriority>Middle</resourceReadoutPriority>
+          <stackLimit>10</stackLimit>
+          <thingCategories>
+            <li>Items</li>
+          </thingCategories>
+          <tradeTags>
+            <li>ExoticMisc</li>
+          </tradeTags>
+          <thingSetMakerTags>
+            <li>AnimalPart</li>
+          </thingSetMakerTags>
+        </ThingDef>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_LotRE_DeerMallornKindHorn</defName>
+          <label>engraved lórien deer antler</label>
+          <description>An engraved lórien deer's antler.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/LothlorienAntlerStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>380</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <Flammability>0.9</Flammability>
+            <Beauty>21</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_LotRE_DeerMallornKindHorn</defName>
+          <label>engrave lórien deer antler</label>
+          <description>Engrave lórien deer antler with art.</description>
+          <jobString>engraving lórien deer antler</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>LotRE_DeerMallornKindHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_LotRE_DeerMallornKindHorn>1</engraved_LotRE_DeerMallornKindHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>LotRE_DeerMallornKindHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/PawnKindDef[defName="LotRE_DeerMallornKind" or defName="LotRE_DeerMallornWhiteKind"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="LotRE_DeerMallornKind" or defName="LotRE_DeerMallornWhiteKind"]/lifeStages/li[3]</xpath>
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HornAttackTool</bodyPartGroup>
+          <thing>LotRE_DeerMallornKindHorn</thing>
+          <allowFemale>false</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </match>
+  </Operation>
+</Patch>

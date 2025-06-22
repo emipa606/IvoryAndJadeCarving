@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Argali"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <BodyDef>
+          <defName>QuadrupedAnimalWithHoovesAndHorns_Argali</defName>
+          <label>quadruped animal</label>
+          <corePart>
+            <def>Body</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+              <li>
+                <def>Spine</def>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Stomach</def>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Heart</def>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Lung</def>
+                <customLabel>left lung</customLabel>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Lung</def>
+                <customLabel>right lung</customLabel>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Kidney</def>
+                <customLabel>left kidney</customLabel>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Kidney</def>
+                <customLabel>right kidney</customLabel>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Liver</def>
+                <coverage>0.03</coverage>
+                <depth>Inside</depth>
+              </li>
+              <li>
+                <def>Neck</def>
+                <coverage>0.26</coverage>
+                <height>Top</height>
+                <parts>
+                  <li>
+                    <def>Head</def>
+                    <coverage>0.80</coverage>
+                    <groups>
+                      <li>HeadAttackTool</li>
+                    </groups>
+                    <parts>
+                      <li>
+                        <def>Skull</def>
+                        <coverage>0.20</coverage>
+                        <depth>Inside</depth>
+                        <parts>
+                          <li>
+                            <def>Brain</def>
+                            <coverage>0.7</coverage>
+                            <depth>Inside</depth>
+                          </li>
+                        </parts>
+                      </li>
+                      <li>
+                        <def>Eye</def>
+                        <customLabel>left eye</customLabel>
+                        <coverage>0.09</coverage>
+                      </li>
+                      <li>
+                        <def>Eye</def>
+                        <customLabel>right eye</customLabel>
+                        <coverage>0.09</coverage>
+                      </li>
+                      <li>
+                        <def>Ear</def>
+                        <customLabel>left ear</customLabel>
+                        <coverage>0.06</coverage>
+                      </li>
+                      <li>
+                        <def>Ear</def>
+                        <customLabel>right ear</customLabel>
+                        <coverage>0.06</coverage>
+                      </li>
+                      <li>
+                        <def>Nose</def>
+                        <coverage>0.06</coverage>
+                      </li>
+                      <li>
+                        <def>AnimalJaw</def>
+                        <coverage>0.3</coverage>
+                        <groups>
+                          <li>Teeth</li>
+                        </groups>
+                        <parts>
+                          <li>
+                            <def>Horn</def>
+                            <coverage>0.4</coverage>
+                            <customLabel>left horn</customLabel>
+                            <groups>
+                              <li>HornAttackTool</li>
+                            </groups>
+                          </li>
+                          <li>
+                            <def>Horn</def>
+                            <coverage>0.4</coverage>
+                            <customLabel>right horn</customLabel>
+                            <groups>
+                              <li>HornAttackTool</li>
+                            </groups>
+                          </li>
+                        </parts>
+                      </li>
+                    </parts>
+                  </li>
+                </parts>
+              </li>
+              <li>
+                <def>Leg</def>
+                <customLabel>front left leg</customLabel>
+                <coverage>0.065</coverage>
+                <height>Bottom</height>
+                <groups>
+                  <li>FrontLeftLeg</li>
+                </groups>
+                <parts>
+                  <li>
+                    <def>Hoof</def>
+                    <customLabel>front left hoof</customLabel>
+                    <coverage>0.15</coverage>
+                  </li>
+                </parts>
+              </li>
+              <li>
+                <def>Leg</def>
+                <customLabel>front right leg</customLabel>
+                <coverage>0.065</coverage>
+                <height>Bottom</height>
+                <groups>
+                  <li>FrontRightLeg</li>
+                </groups>
+                <parts>
+                  <li>
+                    <def>Hoof</def>
+                    <customLabel>front right hoof</customLabel>
+                    <coverage>0.15</coverage>
+                  </li>
+                </parts>
+              </li>
+              <li>
+                <def>Leg</def>
+                <customLabel>rear left leg</customLabel>
+                <coverage>0.065</coverage>
+                <height>Bottom</height>
+                <parts>
+                  <li>
+                    <def>Hoof</def>
+                    <customLabel>rear left hoof</customLabel>
+                    <coverage>0.15</coverage>
+                  </li>
+                </parts>
+              </li>
+              <li>
+                <def>Leg</def>
+                <customLabel>rear right leg</customLabel>
+                <coverage>0.065</coverage>
+                <height>Bottom</height>
+                <parts>
+                  <li>
+                    <def>Hoof</def>
+                    <customLabel>rear right hoof</customLabel>
+                    <coverage>0.15</coverage>
+                  </li>
+                </parts>
+              </li>
+            </parts>
+          </corePart>
+        </BodyDef>
+        <ThingDef ParentName="ResourceVerbBase">
+          <defName>HornArgali</defName>
+          <label>argali horn</label>
+          <description>A tusk from a argali, can be used as a weapon or sold for profit.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ArgaliHorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <equippedAngleOffset>-20</equippedAngleOffset>
+          <statBases>
+            <MarketValue>60</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.1</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+          </statBases>
+          <tools>
+            <li>
+              <label>point</label>
+              <capacities>
+                <li>Scratch</li>
+                <li>Stab</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+              <label>base</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>6</power>
+              <cooldownTime>2</cooldownTime>
+              <chanceFactor>0.5</chanceFactor>
+            </li>
+          </tools>
+          <resourceReadoutPriority>Middle</resourceReadoutPriority>
+          <stackLimit>10</stackLimit>
+          <thingCategories>
+            <li>Items</li>
+          </thingCategories>
+          <tradeTags>
+            <li>ExoticMisc</li>
+          </tradeTags>
+          <thingSetMakerTags>
+            <li>AnimalPart</li>
+          </thingSetMakerTags>
+        </ThingDef>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_HornArgali</defName>
+          <label>engraved argali horn</label>
+          <description>An engraved argali's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/ArgaliHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>220</MarketValue>
+            <MaxHitPoints>40</MaxHitPoints>
+            <Mass>0.8</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>17</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_HornArgali</defName>
+          <label>engrave argali horn</label>
+          <description>Engrave argali horn with art.</description>
+          <jobString>engraving argali horn</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>HornArgali</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_HornArgali>1</engraved_HornArgali>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>HornArgali</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/PawnKindDef[defName="Argali"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/PawnKindDef[defName="Argali"]/lifeStages/li[3]</xpath>
+      <value>
+        <butcherBodyPart>
+          <bodyPartGroup>HornAttackTool</bodyPartGroup>
+          <thing>HornArgali</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Argali"]/race/body</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="Argali"]/race/body</xpath>
+      <value>
+        <body>QuadrupedAnimalWithHoovesAndHorns_Argali</body>
+      </value>
+    </match>
+  </Operation>
+</Patch>

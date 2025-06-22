@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: engraved elephant tusk -->
+  <ivory_carved.label>engraved elephant tusk</ivory_carved.label>
+  <!-- EN: An engraved elephant's tusk. -->
+  <ivory_carved.description>An engraved elephant's tusk.</ivory_carved.description>
+  <!-- EN: ivory figure -->
+  <ivory_figure.label>ivory figure</ivory_figure.label>
+  <!-- EN: A small figure carved from ivory. -->
+  <ivory_figure.description>A small figure carved from ivory.</ivory_figure.description>
+  <!-- EN: jade band -->
+  <jade_band.label>jade band</jade_band.label>
+  <!-- EN: A pretty band worn on the wrist. Increases social abilities slightly. -->
+  <jade_band.description>A pretty band worn on the wrist. Increases social abilities slightly.</jade_band.description>
+  <!-- EN: jade urn -->
+  <jade_urn.label>jade urn</jade_urn.label>
+  <!-- EN: A small urn carved from jade. -->
+  <jade_urn.description>A small urn carved from jade.</jade_urn.description>
+  <!-- EN: engraved thrumbo horn -->
+  <thrumbo_carved.label>engraved thrumbo horn</thrumbo_carved.label>
+  <!-- EN: An engraved thrumbo horn. -->
+  <thrumbo_carved.description>An engraved thrumbo horn.</thrumbo_carved.description>
+  <!-- EN: unfinished carving -->
+  <UnfinishedCarvedSculpture.label>unfinished carving</UnfinishedCarvedSculpture.label>
+  <!-- EN: An unfinished carving. -->
+  <UnfinishedCarvedSculpture.description>An unfinished carving.</UnfinishedCarvedSculpture.description>
+</LanguageData>

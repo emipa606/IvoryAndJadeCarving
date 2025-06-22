@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TyrannosaurusRexSkull"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>stand_TyrannosaurusRexSkull</defName>
+          <label>tyrannosaurus rex skull</label>
+          <description>A tyrannosaurus rex's skull.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/TyrannosaurusRexSkullStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1600</MarketValue>
+            <MaxHitPoints>145</MaxHitPoints>
+            <Mass>4.5</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>25</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>stand_TyrannosaurusRexSkull</defName>
+          <label>make a stand for tyrannosaurus rex skull</label>
+          <description>Make a stand for a tyrannosaurus rex skull.</description>
+          <jobString>making a stand for a tyrannosaurus rex skull</jobString>
+          <workAmount>500</workAmount>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>TyrannosaurusRexSkull</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <stand_TyrannosaurusRexSkull>1</stand_TyrannosaurusRexSkull>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>TyrannosaurusRexSkull</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="TriceratopsHorn"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ThingDef ParentName="IvoryEngraved">
+          <defName>engraved_TriceratopsHorn</defName>
+          <label>engraved triceratops horn</label>
+          <description>An engraved triceratops's horn.</description>
+          <graphicData>
+            <texPath>Things/Item/Special/TriceratopsHornStatue</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+          </graphicData>
+          <statBases>
+            <MarketValue>1400</MarketValue>
+            <MaxHitPoints>140</MaxHitPoints>
+            <Mass>4.2</Mass>
+            <Flammability>1</Flammability>
+            <Beauty>17</Beauty>
+          </statBases>
+        </ThingDef>
+        <RecipeDef ParentName="IvoryEngraving">
+          <defName>engrave_TriceratopsHorn</defName>
+          <label>engrave triceratops horns</label>
+          <description>Engrave triceratops horns with art.</description>
+          <jobString>engraving triceratops horns</jobString>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>TriceratopsHorn</li>
+                </thingDefs>
+              </filter>
+              <count>1</count>
+            </li>
+          </ingredients>
+          <products>
+            <engraved_TriceratopsHorn>1</engraved_TriceratopsHorn>
+          </products>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>TriceratopsHorn</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+        </RecipeDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>
